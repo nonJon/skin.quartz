@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+<include name="My_Settings">
+
+<!-- This section configures Quartz 5 CE settings -->
+<onload condition="!Skin.HasSetting(tv5)">Skin.ToggleSetting(tv5)</onload>			<!--	hide inprogress	-->
+<onload condition="!Skin.HasSetting(music1)">Skin.ToggleSetting(music1)</onload>	<!--	hide artists	-->
+<onload condition="!Skin.HasSetting(music4)">Skin.ToggleSetting(music4)</onload>	<!--	hide files		-->
+<onload condition="!Skin.HasSetting(Addons3)">Skin.ToggleSetting(Addons3)</onload>	<!--	hide pics		-->
+<onload condition="!Skin.HasSetting(Addons4)">Skin.ToggleSetting(Addons4)</onload>	<!--	hide vids		-->
+<onload condition="!Skin.HasSetting(Addons5)">Skin.ToggleSetting(Addons5)</onload>	<!--	hide music		-->
+<onload condition="!Skin.HasSetting(xbmc0)">Skin.ToggleSetting(xbmc0)</onload>		<!-- hide update lib	-->
+<onload condition="!Skin.HasSetting(xbmc1)">Skin.ToggleSetting(xbmc1)</onload>		<!-- hide filemanager	-->
+<onload condition="!Skin.HasSetting(xbmc2)">Skin.ToggleSetting(xbmc2)</onload>		<!-- hide favorites		-->
+<onload condition="!Skin.HasSetting(xbmc3)">Skin.ToggleSetting(xbmc3)</onload>		<!--	hide dvd		-->
+<onload condition="Skin.HasSetting(xbmc4)">Skin.ToggleSetting(xbmc4)</onload>		<!--	show quit		-->
+<onload condition="!Skin.HasSetting(xbmc5)">Skin.ToggleSetting(xbmc5)</onload>		<!-- hide reload skin	-->
+<onload condition="!Skin.HasSetting(UseExtInfo)">Skin.ToggleSetting(UseExtInfo)</onload>	
+<onload condition="!Skin.HasSetting(_FullScreenMusic)">Skin.ToggleSetting(_FullScreenMusic)</onload>
+<onload>skin.setstring(shutdown,quit)</onload>
+<onload>skin.setstring(FanartVisibility,8)</onload>
+<onload>Skin.Reset(MenuOff)</onload>
+<onload>Skin.Reset(MenuLow)</onload>
+<onload>Skin.Reset(MenuMedLow)</onload>
+<onload>Skin.SetBool(MenuMed)</onload>
+<onload>Skin.Reset(MenuMedHigh)</onload>
+<onload>Skin.Reset(MenuHigh)</onload>
+<onload>Skin.Reset(OSDOff)</onload>
+<onload>Skin.Reset(OSDLow)</onload>
+<onload>Skin.Reset(OSDMedLow)</onload>
+<onload>Skin.Reset(OSDMed)</onload>
+<onload>Skin.SetBool(OSDMedHigh)</onload>
+<onload>Skin.Reset(OSDHigh)</onload>
+
+
+
+<!-- This section configures KODI UI settings (see guisettings.xml for complete list)-->
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=filelists.showhidden,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=filelists.showparentdiritems,value=false)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=general.addonupdates,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=input.enablemouse,value=false)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=locale.timezonecountry,value=United States)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=locale.timezone,value=America/Chicago)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=locale.country,value=USA (12h))</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=locale.language,value=resource.language.en_us)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=musicfiles.findremotethumbs,value=false)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=musiclibrary.showallitems,value=false)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=musiclibrary.preferonlinealbumart,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=musiclibrary.downloadinfo,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=musicplayer.crossfadealbumtracks,value=false)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=musicplayer.crossfade,value=5)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=myvideos.extractchapterthumbs,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=myvideos.extractflags,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=myvideos.extractthumb,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=myvideos.selectaction,value=3)</onload> 
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=pvrmanager.backendchannelorder,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=pvrmanager.usebackendchannelnumbers,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=pvrmanager.syncchannelgroups,value=false)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=pvrplayback.switchtofullscreen,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=screensaver.mode,value=)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=videolibrary.actorthumbs,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=videolibrary.groupmoviesets,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=videolibrary.showallitems,value=false)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=videolibrary.updateonstartup,value=false)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=videoplayer.limitguiupdate,value=0)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=addons.unknownsources,value=true)</onload>
+<onload>RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=lookandfeel.soundskin,value=)</onload>
+
+</include>
+</includes>
+
