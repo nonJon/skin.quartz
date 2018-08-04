@@ -231,7 +231,7 @@
 					<onclick>Skin.ToggleSetting(_HideMusicPlayerFanart)</onclick>
 				</control>
 				<control type="button" id="555">
-					<enable>!Skin.HasSetting(_FullScreenMusic)</enable>
+					<enable>true | !Skin.HasSetting(_FullScreenMusic)</enable>
 					<description>Playlist</description>
 					<include>ButtonMenu</include>
 					<label>559</label>

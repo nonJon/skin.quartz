@@ -1,4 +1,4 @@
-<addon id="skin.quartz" version="5.4.0" name="Quartz" provider-name="nonJon, pecinko">
+<addon id="skin.quartz" version="5.4.0" name="Quartz" provider-name="nonJon">
   <requires>
     <import addon="xbmc.gui" version="5.13.0"/>
     <import addon="script.favourites" version="4.0.4"/>
@@ -13,8 +13,8 @@
     <platform>all</platform>
 	<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
     <summary lang="en_US">A no-nonsense UI designed to showcase your fanart.</summary>
-    <description lang="en_US">Quartz is a light-weight skin with a intuitive user interface and a highly customizable home screen.</description>
-    <disclaimer lang="en_US">Original skin design by: pecinko.</disclaimer>
+    <description lang="en_US">Quartz is a light-weight skin with a intuitive user interface and highly customizable home screen.</description>
+    <disclaimer lang="en_US">Original skin design by: pecinko</disclaimer>
 	<forum>https://forum.kodi.tv/showthread.php?tid=331334</forum>
 	<source>https://github.com/nonJon/skin.quartz</source>
 	<assets>

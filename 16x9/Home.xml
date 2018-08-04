@@ -775,7 +775,7 @@
 				<textcolor>HL</textcolor>
 				<shadowcolor>Shadow</shadowcolor>
 				<headlinecolor>FFC0C0C0</headlinecolor>
-				<visible>Skin.HasSetting(_ShowRSS)</visible>
+				<visible>Skin.HasSetting(_ShowRSS) | true</visible>
 				<animation effect="fade" time="300">VisibleChange</animation>
 			</control>
 		</control>

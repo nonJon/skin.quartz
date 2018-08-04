@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="!Skin.HasSetting(LowPowerMode)">RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=lookandfeel.enablerssfeeds,value=true)</onload>
+	<onload condition="!Skin.HasSetting(LowPowerMode) + false">RunScript(special://skin/scripts/setit.py,action=setkodisetting,setting=lookandfeel.enablerssfeeds,value=true)</onload>
 	<defaultcontrol always="true">95</defaultcontrol>
 	<controls>
 		<include>FullBackground</include>
@@ -253,7 +253,7 @@
 					</control>
 				</control>
 				<control type="rss">
-					<visible>!Skin.HasSetting(LowPowerMode)</visible>
+					<visible>!Skin.HasSetting(LowPowerMode) + false</visible>
 					<animation effect="slide" end="0,90" time="300" tween="sine" easing="inout" condition="true">conditional</animation>
 					<left>480</left>
 					<bottom>0</bottom>

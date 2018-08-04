@@ -526,16 +526,6 @@
 						<altlabel>1024</altlabel>
 						<usealttexture>Container.Content(TVShows)</usealttexture>
 					</control>
-					<control type="button" id="301" description="InProgressReset">
-						<visible>[Container.Content(Episodes) | Container.Content(Movies) ] + system.hasaddon(script.module.inprogressreset) + !String.Contains(ListItem.PercentPlayed,0,left)</visible>
-						<height>66</height>
-						<width>270</width>
-						<align>center</align>
-						<font>size22</font>
-						<label>Reset Progress</label>
-						<onclick>Dialog.Close(all,true)</onclick>
-						<onclick>RunScript(script.module.inprogressreset,DBID=$INFO[ListItem.DBID])</onclick>
-					</control>
 					<control type="button" id="9012" description="Actors">
 						<onup>50</onup>
 						<height>66</height>
