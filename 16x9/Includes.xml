@@ -60,7 +60,7 @@
 	<include name="RandImageOn">
 		<randomize>true</randomize>
 	</include>
-	<include name="RandImageOFF">
+	<include name="RandImageOff">
 		<randomize>false</randomize>
 	</include>
 	<include name="TimePerImage1" description="Slideshow 1 min">

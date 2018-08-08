@@ -144,7 +144,7 @@
 			<height>70</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>font32_title</font>
+			<font>size26</font>
 			<label>$ADDON[script.cu.lrclyrics 32005]</label>
 			<shadowcolor>black</shadowcolor>
 			<visible>Control.IsVisible(120) + !Control.IsVisible(110)</visible>
@@ -168,7 +168,7 @@
 					<top>0</top>
 					<width>530</width>
 					<height>40</height>
-					<font>font14</font>
+					<font>size20</font>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -179,7 +179,7 @@
 					<top>0</top>
 					<width>530</width>
 					<height>40</height>
-					<font>font14</font>
+					<font>size20</font>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 					<textcolor>HL</textcolor>
@@ -191,8 +191,8 @@
 			<top>795</top>
 			<width>48</width>
 			<height>24</height>
-			<texturefocus colordiffuse="FF12B2E7">culrc-arrowdown.png</texturefocus>
-			<texturenofocus colordiffuse="FF12B2E7">culrc-arrowdown.png</texturenofocus>
+			<!--<texturefocus colordiffuse="FF12B2E7">culrc-arrowdown.png</texturefocus>-->
+			<!--<texturenofocus colordiffuse="FF12B2E7">culrc-arrowdown.png</texturenofocus>-->
 			<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 			<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 			<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -205,8 +205,8 @@
 			<top>-40</top>
 			<width>48</width>
 			<height>24</height>
-			<texturefocus colordiffuse="FF12B2E7" flipy="true">culrc-arrowdown.png</texturefocus>
-			<texturenofocus colordiffuse="FF12B2E7" flipy="true">culrc-arrowdown.png</texturenofocus>
+			<!--<texturefocus colordiffuse="FF12B2E7" flipy="true">culrc-arrowdown.png</texturefocus>-->
+			<!--<texturenofocus colordiffuse="FF12B2E7" flipy="true">culrc-arrowdown.png</texturenofocus>-->
 			<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 			<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 			<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>

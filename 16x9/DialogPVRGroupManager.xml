@@ -70,7 +70,7 @@
 								<posy>0</posy>
 								<width>465</width>
 								<height>60</height>
-								<font>font12</font>
+								<font>size18</font>
 								<align>left</align>
 								<aligny>center</aligny>
 								<textcolor>grey2</textcolor>
@@ -100,7 +100,7 @@
 								<posy>0</posy>
 								<width>465</width>
 								<height>60</height>
-								<font>font12</font>
+								<font>size18</font>
 								<align>left</align>
 								<aligny>center</aligny>
 								<textcolor>HL</textcolor>
@@ -175,7 +175,7 @@
 								<posy>0</posy>
 								<width>420</width>
 								<height>60</height>
-								<font>font12</font>
+								<font>size18</font>
 								<align>left</align>
 								<aligny>center</aligny>
 								<textcolor>grey2</textcolor>
@@ -212,7 +212,7 @@
 								<posy>0</posy>
 								<width>420</width>
 								<height>60</height>
-								<font>font12</font>
+								<font>size18</font>
 								<align>left</align>
 								<aligny>center</aligny>
 								<textcolor>HL</textcolor>
@@ -287,10 +287,10 @@
 								<posy>0</posy>
 								<width>420</width>
 								<height>60</height>
-								<font>font12</font>
+								<font>size18</font>
 								<align>left</align>
 								<aligny>center</aligny>
-								<textcolor>grey2</textcolor>
+								<textcolor>Grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
 							</control>
@@ -324,7 +324,7 @@
 								<posy>0</posy>
 								<width>420</width>
 								<height>60</height>
-								<font>font12</font>
+								<font>size18</font>
 								<align>left</align>
 								<aligny>center</aligny>
 								<textcolor>HL</textcolor>

@@ -221,7 +221,7 @@
 			<width>180</width>
 			<height>90</height>
 			<align>center</align>
-			<font>size21</font>
+			<font>size20</font>
 			<textwidth>285</textwidth>
 			<label>$LOCALIZE[20181]</label>
 			<!-- <label>Delete</label> -->
@@ -238,7 +238,7 @@
 			<width>130</width>
 			<height>90</height>
 			<align>center</align>
-			<font>size21</font>
+			<font>size20</font>
 			<textwidth>285</textwidth>
 			<label>[UPPERCASE]$LOCALIZE[20177][/UPPERCASE]</label>
 			<onleft>23</onleft>

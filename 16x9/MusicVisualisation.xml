@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!--<onload condition="system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>-->
-	<defaultcontrol>-</defaultcontrol> 
+	<defaultcontrol></defaultcontrol> 
 	<include>OpenClose</include>
 	<controls>
 		<control type="group">

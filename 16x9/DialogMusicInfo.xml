@@ -8,11 +8,11 @@
 	<controls>
 		<include>MiniBackground</include>
 		<include>MusicBackground</include>
-		<control type="image" description="Vignette">GlobalHeadings
+	<!--<control type="image" description="Vignette">GlobalHeadings
 			<include>Dimensions_Fullscreen</include>
 			<texture>img/Vignette_VideoInfo.png</texture>
 			<aspectratio>stretch</aspectratio>
-		</control>
+		</control> -->
 		<include>Header</include>
 		<control type="group">
 			<control type="group" description="Thumbs">

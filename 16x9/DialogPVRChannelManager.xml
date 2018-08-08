@@ -162,7 +162,7 @@
 						<posy>38</posy>
 						<width>570</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<shadowcolor>black</shadowcolor>
@@ -183,7 +183,7 @@
 						<posy>98</posy>
 						<width>570</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<shadowcolor>black</shadowcolor>
@@ -201,7 +201,7 @@
 						<posy>158</posy>
 						<width>570</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<texturefocus border="5">img/MediaButton2.png</texturefocus>
 						<texturenofocus border="5">img/ListNF.png</texturenofocus>
 						<label>19202</label>
@@ -225,7 +225,7 @@
 						<posy>218</posy>
 						<width>570</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<shadowcolor>black</shadowcolor>
@@ -246,7 +246,7 @@
 						<posy>278</posy>
 						<width>570</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<texturefocus border="5">img/MediaButton2.png</texturefocus>
 						<texturenofocus border="5">img/ListNF.png</texturenofocus>
 						<label>19200</label>
@@ -265,7 +265,7 @@
 						<posy>0</posy>
 						<width>570</width>
 						<height>30</height>
-						<font>font12</font>
+						<font>size18</font>
 						<label>$LOCALIZE[31026]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -277,7 +277,7 @@
 						<posy>38</posy>
 						<width>285</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<texturefocus border="5">img/MediaButton2.png</texturefocus>
 						<texturenofocus border="5">img/ListNF.png</texturenofocus>
 						<align>center</align>
@@ -294,7 +294,7 @@
 						<posy>38</posy>
 						<width>278</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<visible>String.IsEmpty(Window.Property(IsRadio))</visible>
 						<texturefocus border="5">img/MediaButton2.png</texturefocus>
 						<texturenofocus border="5">img/ListNF.png</texturenofocus>
@@ -311,7 +311,7 @@
 						<posy>38</posy>
 						<width>278</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
 						<texturefocus border="5">img/MediaButton2.png</texturefocus>
 						<texturenofocus border="5">img/ListNF.png</texturenofocus>
@@ -328,7 +328,7 @@
 						<posy>98</posy>
 						<width>570</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<texturefocus border="5">img/MediaButton2.png</texturefocus>
 						<texturenofocus border="5">img/ListNF.png</texturenofocus>
 						<align>center</align>
@@ -344,7 +344,7 @@
 						<posy>158</posy>
 						<width>570</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<texturefocus border="5">img/MediaButton2.png</texturefocus>
 						<texturenofocus border="5">img/ListNF.png</texturenofocus>
 						<align>center</align>
@@ -360,7 +360,7 @@
 						<posy>218</posy>
 						<width>570</width>
 						<height>52</height>
-						<font>font12</font>
+						<font>size18</font>
 						<texturefocus border="5">img/MediaButton2.png</texturefocus>
 						<texturenofocus border="5">img/ListNF.png</texturenofocus>
 						<align>center</align>
@@ -382,7 +382,7 @@
 					<width>300</width>
 					<height>60</height>
 					<label>186</label>
-					<font>font12_title</font>
+					<font>size18</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<onleft>6</onleft>
@@ -397,7 +397,7 @@
 					<width>300</width>
 					<height>60</height>
 					<label>14070</label>
-					<font>font12_title</font>
+					<font>size18</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<onleft>4</onleft>
@@ -412,7 +412,7 @@
 					<width>300</width>
 					<height>60</height>
 					<label>222</label>
-					<font>font12_title</font>
+					<font>size18</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<onleft>5</onleft>

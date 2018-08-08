@@ -10,7 +10,7 @@
 				<posy>0</posy>
 				<width>1920</width>
 				<height>96</height>
-				<texture>texture/notification.png</texture>
+				<texture>HUD/Notification.png</texture>
 			</control>
 			<control type="label" id="9000" description="Real label">
 				<top>3</top>

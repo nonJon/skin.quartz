@@ -8,7 +8,7 @@
 		<control type="group" description="Bottom NAV">
 			<posy>0</posy>
 			<posx>0</posx>
-			<control type="image">
+		<!--<control type="image">
 				<posx>0</posx>
 				<posy>990</posy>
 				<width>1920</width>
@@ -22,7 +22,7 @@
 				<width>21</width>
 				<height>21</height>
 				<texture>icons/reload24.png</texture>
-			</control>
+			</control> -->
 			<control type="label" id="11" description="Time of last update">
 				<posx>-105</posx>
 				<posy>1020</posy>

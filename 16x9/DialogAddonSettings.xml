@@ -105,7 +105,7 @@
 				</control>
 				<control type="image" id="11" description="Default Seperator">
 					<height>-3</height>
-					<texture>-</texture>
+					<texture></texture>
 				</control>
 				<control type="edit" id="12">
 					<include>SkinSettingsButton</include>

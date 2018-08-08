@@ -201,7 +201,7 @@
 					<top>200</top>
 					<width>700</width>
 					<height>36</height>
-					<font>font18</font>
+					<font>size18</font>
 					<label>[COLOR=Grey] [/COLOR]$INFO[Container(50).ListItem.StartTime]</label>
 				</control>
 				<control type="progress">
@@ -218,7 +218,7 @@
 					<top>200</top>
 					<width>700</width>
 					<height>36</height>
-					<font>font18</font>
+					<font>size18</font>
 					<visible>Container(50).ListItem.HasEpg</visible>
 					<label>[COLOR=Grey] [/COLOR]$INFO[Container(50).ListItem.EndTime]</label>
 				</control>

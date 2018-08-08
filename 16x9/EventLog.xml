@@ -12,7 +12,6 @@
 			<texture border="0,30,0,0">OSD/OSDBackground.png</texture> 
 			<colordiffuse>FF9e9e9e</colordiffuse> 
 		</control> 
-		<include>Time</include>
 		<control type="group">
 			<include>OpenClose</include>
 			<control type="group"> 
@@ -66,9 +65,8 @@
 						<control type="label" description="Label2">
 							<posx>0</posx>
 							<height>60</height>
-							<font>Details</font>
+							<font>size20</font>
 							<width>1566</width>
-							<textcolor>Label2</textcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
@@ -112,9 +110,8 @@
 						<control type="label" description="Label2">
 							<posx>0</posx>
 							<height>60</height>
-							<font>Details</font>
+							<font>size20</font>
 							<width>1566</width>
-							<textcolor>Label2</textcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>

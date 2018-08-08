@@ -74,6 +74,11 @@
 				</control>
 				<control type="label">
 					<textcolor>red</textcolor>
+					<label>DialogMusicInfo.xml</label>
+					<visible>Window.IsVisible(DialogMusicInfo.xml)</visible>
+				</control>
+				<control type="label">
+					<textcolor>red</textcolor>
 					<label>MyMusicPlaylist.xml</label>
 					<visible>Window.IsVisible(MyMusicPlaylist.xml)</visible>
 				</control>

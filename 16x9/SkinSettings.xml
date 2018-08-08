@@ -710,22 +710,6 @@
 					<label>$LOCALIZE[31168]</label>
 					<onclick>RunScript(special://skin/scripts/cachit.py)</onclick>
 				</control>
-				<control type="button" id="3507" description="Batch configuration">
-					<visible>false</visible>
-					<height>81</height>
-					<width>1260</width>
-					<textoffsetx>20</textoffsetx>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>size23</font>		
-					<texturefocus colordiffuse="red" border="5">img/MediaButton2.png</texturefocus>		
-					<label>$LOCALIZE[31192]</label>
-					<focusedcolor>red</focusedcolor>
-					<pulseonselect>true</pulseonselect>
-					<onclick>skin.setstring(Dialog_Header,$LOCALIZE[31192])</onclick>
-					<onclick>skin.setstring(Dialog_Text,$LOCALIZE[36023].)</onclick>
-					<onclick>ActivateWindow(1166)</onclick>
-				</control>
 				<control type="radiobutton" id="3508" description="low power mode">
 					<visible>true</visible>
 					<include>SkinSettingsButton</include>
