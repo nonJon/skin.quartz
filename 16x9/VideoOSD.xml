@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">603</defaultcontrol>
+	<onload condition="Player.PauseEnabled">SetFocus(603)</onload>
+	<onload condition="!Player.PauseEnabled">SetFocus(600)</onload>
+	<!--<defaultcontrol always="true">603</defaultcontrol>-->
 	<zorder>2</zorder>
 	<controls>
 		<visible>Player.HasMedia</visible>
@@ -26,11 +28,13 @@
 							<texturefocus colordiffuse="HL">OSD/Stop.png</texturefocus>
 							<onup>606</onup>
 							<onleft>606</onleft>
-							<onright>601</onright>
-							<ondown>603</ondown>
+							<onright condition="Player.SeekEnabled">601</onright>
+							<onright condition="!Player.SeekEnabled">606</onright>
+							<ondown condition="Player.PauseEnabled">603</ondown>
 							<onclick>XBMC.PlayerControl(Stop)</onclick>
 						</control>
 						<control type="button" id="601">
+							<visible>player.PauseEnabled</visible>
 							<posx>568</posx>
 							<width>93</width>
 							<height>57</height>
@@ -41,7 +45,15 @@
 							<onright>602</onright>
 							<onclick>XBMC.PlayerControl(Previous)</onclick>
 						</control>
+						<control type="button" id="601">
+							<visible>!player.SeekEnabled</visible>
+							<posx>568</posx>
+							<width>93</width>
+							<height>57</height>
+							<texturenofocus colordiffuse="gray">OSD/SkipBack.png</texturenofocus>
+						</control>
 						<control type="button" id="602">
+							<visible>player.SeekEnabled</visible>
 							<posx>662</posx>
 							<width>93</width>
 							<height>57</height>
@@ -52,7 +64,15 @@
 							<onup>606</onup>
 							<onclick>XBMC.PlayerControl(Rewind)</onclick>
 						</control>
+						<control type="button" id="602">
+							<visible>!player.SeekEnabled</visible>
+							<posx>662</posx>
+							<width>93</width>
+							<height>57</height>
+							<texturenofocus colordiffuse="gray">OSD/Rewind.png</texturenofocus>
+						</control>
 						<control type="togglebutton" id="603">
+							<visible>player.PauseEnabled</visible>
 							<posx>754</posx>
 							<width>93</width>
 							<height>57</height>
@@ -67,7 +87,17 @@
 							<ondown>600</ondown>
 							<onclick>XBMC.PlayerControl(Play)</onclick>
 						</control>
+						<control type="togglebutton" id="603">
+							<visible>!player.PauseEnabled</visible>
+							<posx>754</posx>
+							<width>93</width>
+							<height>57</height>
+							<texturenofocus colordiffuse="gray">OSD/Play.png</texturenofocus>
+							<usealttexture>Player.Playing</usealttexture>
+							<alttexturenofocus colordiffuse="gray">OSD/Pause.png</alttexturenofocus>
+						</control>
 						<control type="button" id="604">
+							<visible>player.SeekEnabled</visible>
 							<posx>848</posx>
 							<width>93</width>
 							<height>57</height>
@@ -78,7 +108,15 @@
 							<onup>606</onup>
 							<onclick>XBMC.PlayerControl(Forward)</onclick>
 						</control>
+						<control type="button" id="604">
+							<visible>!player.SeekEnabled</visible>
+							<posx>848</posx>
+							<width>93</width>
+							<height>57</height>
+							<texturenofocus colordiffuse="gray">OSD/FastForward.png</texturenofocus>
+						</control>
 						<control type="button" id="605">
+							<visible>player.SeekEnabled</visible>
 							<posx>940</posx>
 							<width>93</width>
 							<height>57</height>
@@ -89,15 +127,24 @@
 							<onup>606</onup>
 							<onclick>XBMC.PlayerControl(Next)</onclick>
 						</control>
+						<control type="button" id="605">
+							<visible>!player.SeekEnabled</visible>
+							<posx>940</posx>
+							<width>93</width>
+							<height>57</height>
+							<texturenofocus colordiffuse="gray">OSD/SkipForward.png</texturenofocus>
+						</control>
 						<control type="button" id="606">
 							<posx>1034</posx>
 							<width>93</width>
 							<height>57</height>
 							<texturenofocus>OSD/DVD.png</texturenofocus>
 							<texturefocus colordiffuse="HL">OSD/DVD.png</texturefocus>
-							<onleft>605</onleft>
+							<onleft condition="Player.SeekEnabled">605</onleft>
+							<onleft condition="!Player.SeekEnabled">600</onleft>
 							<onright>600</onright>
-							<onup>603</onup>
+							<onup condition="Player.PauseEnabled">603</onup>
+							<onup condition="!Player.PauseEnabled">600</onup>
 							<onclick allowhiddenfocus="true">Control.SetFocus(101)</onclick>
 						</control>
 					</control>
