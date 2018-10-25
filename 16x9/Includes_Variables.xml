@@ -215,13 +215,6 @@
 			+ !ListItem.IsResumable">$INFO[ListItem.Overlay,overlay/4/]</value>
 		<value></value>
 	</variable>
-	<variable name="WeatherFooter" description="Weather plus footer labels">
-		<value condition="String.IsEmpty(Window.Property(Weather.CurrentView))">$LOCALIZE[31904]</value>
-		<value condition="String.IsEqual(Window.Property(Weather.CurrentView),36hour)">$LOCALIZE[31901]</value>
-		<value condition="String.IsEqual(Window.Property(Weather.CurrentView),weekend)">$LOCALIZE[31903]</value>
-		<value condition="String.IsEqual(Window.Property(Weather.CurrentView),maps)">$INFO[Window.Property(Weather.CurrentMap)]</value>
-		<value condition="String.IsEqual(Window.Property(Weather.CurrentView),hourly)">$LOCALIZE[31902]</value>
-	</variable>
 	<variable name="GlobalHeadings" description="Global Headings">
 		<value condition="Window.IsActive(SkinSettings.xml)">$LOCALIZE[5] - Quartz</value>
 		<value condition="Window.IsActive(Settings.xml)">$LOCALIZE[5]</value>
@@ -327,9 +320,7 @@
 		<value condition="Control.HasFocus(3502)">$LOCALIZE[31135]</value>
 		<value condition="Control.HasFocus(3503)">$LOCALIZE[31140]</value>
 		<value condition="Control.HasFocus(3900)">$LOCALIZE[31142]</value>
-		<value condition="Control.HasFocus(3505)">$LOCALIZE[31169]</value>
 		<value condition="Control.HasFocus(3506)">$LOCALIZE[31185].</value>
-		<value condition="Control.HasFocus(3507)">$LOCALIZE[31193]</value>
 		<value condition="Control.HasFocus(3508)">$LOCALIZE[31153]</value>
 		<value condition="Control.HasFocus(3701)">$LOCALIZE[31290]</value>
 		<value condition="Control.HasFocus(3702)">$LOCALIZE[31167]</value>
@@ -350,6 +341,5 @@
 		<value condition="Control.HasFocus(3806)">$LOCALIZE[31194] $LOCALIZE[31199]</value>
 		<value condition="Control.HasFocus(3807)">$LOCALIZE[31194] $LOCALIZE[31199]</value>
 		<value condition="Control.HasFocus(3820)">$LOCALIZE[31118]</value>
-		<value condition="Window.IsVisible(Custom_HomeCustomise.xml) + !String.IsEmpty(Window(home).Property(ItemPath))">$LOCALIZE[31374]</value>
 	</variable>
 </includes>
