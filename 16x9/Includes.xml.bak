@@ -39,7 +39,6 @@
 	<expression name="isEnabledScrollbar">!Skin.HasSetting(_ScrollbarsOff)</expression>
 	<expression name="BGvideoPlaying">Player.HasVideo + !Skin.HasSetting(BGvideoOff)</expression>
 	<include file="Includes_Variables.xml" />
-	<include file="Includes_DialogSelect.xml" />
 	<include file="defaults.xml" />
 	<include file="CommonViews.xml" />
 	<include file="View_50_List.xml" />
