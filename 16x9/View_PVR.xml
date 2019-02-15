@@ -103,6 +103,7 @@
 					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 				</control>
 				<control type="button" id="2">
+					<visible>false</visible>
 					<description>View As button</description>
 					<include>9000ButtonsBlade</include>
 					<label></label>

@@ -4,7 +4,7 @@
 	<include>DialogOpenClose</include>
 	<coordinates>
 		<left>0</left>
-		<top>-30</top>
+		<top>0</top>
 	</coordinates>
 	<controls>  
 		<control type="group"> 
@@ -12,6 +12,7 @@
 			<visible>!Window.IsVisible(VideoFullScreen.xml)</visible> 
 		</control>
 		<control type="group"> 
+			<top>-30</top>
 			<animation effect="fade" start="100" end="0" time="150" condition="Window.Is(contentsettings) 
 				+ Window.IsActive(AddonSettings)">Conditional
 			</animation>
@@ -52,7 +53,7 @@
 				<width>900</width>
 				<height>480</height>
 				<pagecontrol>60</pagecontrol>
-				<onleft>noop</onleft>
+				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>noop</onup>
 				<ondown>9000</ondown>
