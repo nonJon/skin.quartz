@@ -90,10 +90,7 @@
 				<height>480</height>
 				<onright>9000</onright>
 				<onleft>5</onleft>
-				<animation condition="!Control.HasFocus(60) + !Container.Scrolling 
-					+ !$EXP[isEnabledScrollbar],$LOCALIZE[31875])" 
-					effect="fade" start="100" end="0" time="200" reversible="true">Conditional
-				</animation>
+				<animation condition="!Control.HasFocus(60) + !Container.Scrolling + !$EXP[isEnabledScrollbar]" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>$EXP[isEnabledScrollbar]</visible>
 			</control>
 			<control type="group">
