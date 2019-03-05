@@ -474,7 +474,7 @@ msgstr "15 seconds"
 
 msgctxt "#31212"
 msgid "20 seconds"
-msgstr "30 seconds"
+msgstr "20 seconds"
 
 msgctxt "#31213"
 msgid "25 seconds"
