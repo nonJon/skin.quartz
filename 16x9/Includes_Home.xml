@@ -297,7 +297,7 @@
 	<include name="FanartSlideshow">
 		<control type="group">
 			<visible>Skin.HasSetting(UseFanartSlideshow) + !$EXP[BGvideoPlaying]</visible>
-			<visible>$EXP[isFanartSourceContextual] + [Control.HasFocus(300) | Control.HasFocus(302) | Control.HasFocus(303)]</visible>
+			<visible>!$EXP[isFanartSourceContextual] | [$EXP[isFanartSourceContextual] + [Control.HasFocus(300) | Control.HasFocus(302) | Control.HasFocus(303)]]</visible>
 			<include>HomeFanartList</include>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="image">
