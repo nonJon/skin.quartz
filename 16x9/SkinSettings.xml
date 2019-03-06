@@ -499,14 +499,14 @@
 				</control>
 				<control type="radiobutton" id="3413" description="Hide media shelves">
 					<include>SkinSettingsButton</include>
-					<label>Hide media shelves on hompage</label>
+					<label>$LOCALIZE[31168]</label>
 					<onclick>Skin.ToggleSetting(HideMediaShelves)</onclick>
 					<selected>Skin.HasSetting(HideMediaShelves)</selected>
 					<radioposx>1210</radioposx>
 				</control>
 				<control type="radiobutton" id="3410" description="Use fanart slideshow">
 					<include>SkinSettingsButton</include>
-					<label>Enable fanart slideshow for homepage</label>
+					<label>$LOCALIZE[31169]</label>
 					<onclick>Skin.ToggleSetting(UseFanartSlideshow)</onclick>
 					<onclick condition="!Skin.HasSetting(UseFanartSlideshow)">Skin.Reset(UseCustomBackground)</onclick>
 					<onclick condition="!Skin.HasSetting(UseFanartSlideshow)">Skin.Reset(UseCustomSlideshow)</onclick>

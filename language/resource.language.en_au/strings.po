@@ -348,6 +348,14 @@ msgctxt "#31167"
 msgid "Prevents the video player from showing in the background of various windows."
 msgstr "Prevents the video player from showing in the background of various windows."
 
+msgctxt "#31168"
+msgid "Hide media shelves on homepage"
+msgstr "Hide media shelves on homepage"
+
+msgctxt "#31169"
+msgid "Enable fanart slideshow for homepage"
+msgstr "Enable fanart slideshow for homepage"
+
 msgctxt "#31170"
 msgid "Show watched content indicators"
 msgstr "Show watched content indicators"
