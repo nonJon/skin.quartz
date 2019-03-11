@@ -528,6 +528,7 @@
 					<onclick>Skin.SelectBool(13603, 31210|FanartTime1, 31211|FanartTime2, 31212|FanartTime3, 31213|FanartTime4, 31214|FanartTime5, 31215|FanartTime6, 31216|FanartTime7)</onclick>
 				</control>
 				<control type="radiobutton" id="3414" description="Show fanart titles">
+					<visible>Skin.HasSetting(UseFanartSlideshow)</visible>
 					<include>SkinSettingsButton</include>
 					<label>   Show titles</label>
 					<onclick>Skin.ToggleSetting(ShowFanartSlideshowtitles)</onclick>
