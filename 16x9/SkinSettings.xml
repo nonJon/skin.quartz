@@ -527,6 +527,13 @@
 					<label2 fallback="$LOCALIZE[31212]">$VAR[FanartTimeLabel2]</label2>
 					<onclick>Skin.SelectBool(13603, 31210|FanartTime1, 31211|FanartTime2, 31212|FanartTime3, 31213|FanartTime4, 31214|FanartTime5, 31215|FanartTime6, 31216|FanartTime7)</onclick>
 				</control>
+				<control type="radiobutton" id="3414" description="Show fanart titles">
+					<include>SkinSettingsButton</include>
+					<label>   Show titles</label>
+					<onclick>Skin.ToggleSetting(ShowFanartSlideshowtitles)</onclick>
+					<selected>Skin.HasSetting(ShowFanartSlideshowtitles)</selected>
+					<radioposx>1210</radioposx>
+				</control>
 				<control type="radiobutton" id="3406" description="Use custom slideshow">
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[31974]</label>

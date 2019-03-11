@@ -54,18 +54,24 @@
 				<texture fallback="img/BGOverlay4.png">img/BGOverlay$INFO[Skin.String(FanartVisibility)].png</texture>
 				<colordiffuse>Overlay</colordiffuse>
 			</control>	
-		<!--<control type="group">
+			<control type="group">
+				<visible>Skin.HasSetting(UseFanartSlideshow)</visible>
+				<visible>Skin.HasSetting(ShowFanartSlideshowtitles)</visible>
+				<visible>!$EXP[ShelfHasFocus]</visible>
+				<visible>!$EXP[BGvideoPlaying]</visible>
+				<visible>!$EXP[isFanartSourceContextual] | [$EXP[isFanartSourceContextual] + [Control.HasFocus(300) | Control.HasFocus(302) | Control.HasFocus(303)]]</visible>
+				<animation effect="fade" time="180">VisibleChange</animation>
 				<control type="label">
 					<bottom>20</bottom>
 					<height>40</height>
 					<align>right</align>
 					<textoffsetx>60</textoffsetx>
 					<textcolor>Grey3</textcolor>
-					<font>size20</font>
+					<font>size19</font>
 					<shadowcolor>ShadowDark</shadowcolor>
-					<label>$INFO[Container(3300).ListItem.Label]</label>
+					<label>$VAR[FanartTitle]</label>
 				</control>
-			</control> -->
+			</control> 
 		</control>
 
 		<include>MediaHeader</include>

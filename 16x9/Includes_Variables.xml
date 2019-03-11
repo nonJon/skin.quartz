@@ -35,6 +35,14 @@
 		<value condition="$EXP[isFanartSourceTVshows]">$INFO[Container(3302).ListItem.Art(fanart)]</value>
 		<value condition="$EXP[isFanartSourceMusic]">$INFO[Container(3303).ListItem.Art(fanart)]</value>
 	</variable>
+	<variable name="FanartTitle">
+		<value condition="$EXP[isFanartSourceContextual] + Control.HasFocus(300)">$INFO[Container(3300).ListItem.Label]</value>
+		<value condition="$EXP[isFanartSourceContextual] + Control.HasFocus(302)">$INFO[Container(3302).ListItem.Label]</value>
+		<value condition="$EXP[isFanartSourceContextual] + Control.HasFocus(303)">$INFO[Container(3303).ListItem.Label]</value>
+		<value condition="$EXP[isFanartSourceMovies]">$INFO[Container(3300).ListItem.Label]</value>
+		<value condition="$EXP[isFanartSourceTVshows]">$INFO[Container(3302).ListItem.Label]</value>
+		<value condition="$EXP[isFanartSourceMusic]">$INFO[Container(3303).ListItem.Label]</value>
+	</variable>
 	<variable name="IconDiffuse"><value>ffd2d2d2</value></variable>
 	<variable name="IconColor">
 		<value condition="String.StartsWith(ListItem.Icon,Default)">ffd2d2d2</value>
