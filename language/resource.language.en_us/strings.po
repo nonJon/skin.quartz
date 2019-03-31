@@ -364,6 +364,14 @@ msgctxt "#31171"
 msgid "Show icons that indicate when media has been watched."
 msgstr "Show icons that indicate when media has been watched."
 
+msgctxt "#31172"
+msgid "Show titles"
+msgstr "Show titles"
+
+msgctxt "#31173"
+msgid "Show titles on homepage."
+msgstr "Show titles on homepage."
+
 msgctxt "#31178"
 msgid "Panel"
 msgstr "Panel"

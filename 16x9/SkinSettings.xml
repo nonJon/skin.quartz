@@ -530,7 +530,7 @@
 				<control type="radiobutton" id="3414" description="Show fanart titles">
 					<visible>Skin.HasSetting(UseFanartSlideshow)</visible>
 					<include>SkinSettingsButton</include>
-					<label>   Show titles</label>
+					<label>   $LOCALIZE[31172]</label>
 					<onclick>Skin.ToggleSetting(ShowFanartSlideshowtitles)</onclick>
 					<selected>Skin.HasSetting(ShowFanartSlideshowtitles)</selected>
 					<radioposx>1210</radioposx>
