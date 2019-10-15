@@ -875,7 +875,7 @@
 			<right>35</right>
 			<top>165</top>
 			<height>769</height>
-			<onleft conditon="Container(3000).HasFocus(3107)">3070</onleft>   
+			<onleft condition="Container(3000).HasFocus(3107)">3070</onleft>   
 			<visible allowhiddenfocus="false">Container(3000).HasFocus(3107)</visible>
 		</control>		
 		<control type="textbox">
