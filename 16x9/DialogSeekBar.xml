@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-	<onload condition="Skin.HasSetting(UseExtInfo) + !Player.ShowInfo">Info</onload>
-	<onunload condition="Skin.HasSetting(UseExtInfo) + Player.ShowInfo">Info</onunload>
+	<onload condition="Skin.HasSetting(UseExtInfo) + !Player.ShowInfo + !Window.IsActive(DialogPlayerProcessInfo.xml)">Info</onload>
+	<onunload condition="Skin.HasSetting(UseExtInfo) + Player.ShowInfo + Window.IsActive(fullscreenvideo)">Info</onunload>
 	<defaultcontrol always="true">901</defaultcontrol>
 	<include>OpenClose</include>
 	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !String.IsEmpty(Player.SeekNumeric) | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
@@ -160,7 +160,7 @@
 				<font>size17</font>
 			</control>
 			<control type="label">
-				<posx>60r</posx>
+				<posx>150r</posx>
 				<posy>0</posy>
 				<height>30</height>
 				<width>180</width>
@@ -184,7 +184,7 @@
 					<font>size17</font>
 				</control>
 				<control type="label">
-					<posx>60r</posx>
+					<posx>150r</posx>
 					<posy>0</posy>
 					<height>30</height>
 					<width>180</width>
@@ -244,6 +244,14 @@
 				<posx>75</posx>
 				<include>SeekbarIconsCommons</include>
 				<texture flipx="true" border="2">OSD/OSDProgressPlay.png</texture>
+			</control>
+			<control type="image" description="Mute icon all windows">
+				<posy>-4</posy>
+				<right>52</right>
+				<width>58</width>
+				<height>58</height>
+				<aspectratio align="left">keep</aspectratio>
+				<texture colordiffuse="White">$VAR[VolumeIconVar]</texture>
 			</control>
 		</control>
 	</controls>
