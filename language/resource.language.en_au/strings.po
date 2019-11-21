@@ -533,8 +533,8 @@ msgid "Local subtitle available"
 msgstr "Local subtitle available"
 
 msgctxt "#31289"
-msgid "Newly Added"
-msgstr "Newly Added"
+msgid "Recents"
+msgstr "Recents"
 
 msgctxt "#31290"
 msgid "Do not show background art in the fullscreen music player."
@@ -610,8 +610,8 @@ msgid "Channel Options"
 msgstr "Channel Options"
 
 msgctxt "#31972"
-msgid "Reload Skin"
-msgstr "Reload Skin"
+msgid "Reload skin"
+msgstr "Reload skin"
 
 msgctxt "#31974"
 msgid "Enable custom slideshow for homepage"

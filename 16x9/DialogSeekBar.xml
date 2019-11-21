@@ -138,7 +138,6 @@
 				<texture colordiffuse="$VAR[OSDTransperancy]">OSD/OSDBackground.png</texture>
 			</control>
 		</control>
-		
 		<control type="group">
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
 			<posy>1014</posy>
@@ -214,39 +213,17 @@
 		</control>
 		<control type="group">
 			<posy>1008</posy>
-			<posx>0</posx>
-			<control type="image" description="Pause">
-				<visible>Player.Paused + !Player.Caching</visible>
-				<posx>52</posx>
-				<include>SeekbarIconsCommons</include>
-				<texture border="2">OSD/OSDProgressPause.png</texture>
+			<posx>0</posx> 
+			<control type="image" description="Player status icon">
+				<posy>-16</posy>
+				<posx>40</posx>
+				<width>72</width>
+				<height>72</height>
+				<aspectratio align="left">keep</aspectratio>
+				<texture colordiffuse="White">$VAR[SeekbarIconVar]</texture>
 			</control>
-			<control type="image" description="Play">
-				<visible>player.playing | player.forwarding2x | player.forwarding4x | player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
-				<posx>52</posx>
-				<include>SeekbarIconsCommons</include>
-				<texture border="2">OSD/OSDProgressPlay.png</texture>
-			</control>
-			<control type="image" description="FF 2">
-				<visible>player.forwarding2x | player.forwarding4x | player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
-				<posx>75</posx>
-				<include>SeekbarIconsCommons</include>
-				<texture border="2">OSD/OSDProgressPlay.png</texture>
-			</control>
-			<control type="image" description="RW 2">
-				<visible>player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
-				<posx>52</posx>
-				<include>SeekbarIconsCommons</include>
-				<texture flipx="true" border="2">OSD/OSDProgressPlay.png</texture>
-			</control>
-			<control type="image" description="RW 2">
-				<visible>player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
-				<posx>75</posx>
-				<include>SeekbarIconsCommons</include>
-				<texture flipx="true" border="2">OSD/OSDProgressPlay.png</texture>
-			</control>
-			<control type="image" description="Mute icon all windows">
-				<posy>-4</posy>
+			<control type="image" description="Volume icon">
+				<posy>-5</posy>
 				<right>52</right>
 				<width>58</width>
 				<height>58</height>

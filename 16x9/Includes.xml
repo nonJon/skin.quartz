@@ -473,11 +473,6 @@
 			</control>
 		</control>
 	</include>
-	<include name="SeekbarIconsCommons">
-		<width>45</width>
-		<height>45</height>
-		<aspectratio aligny="center" align="left">keep</aspectratio>
-	</include>
 	<include name="SeekbarLabels">
 		<posx>0</posx>
 		<posy>525</posy>
