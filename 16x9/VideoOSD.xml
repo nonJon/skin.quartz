@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">603</defaultcontrol>
-	<onload condition="!Player.PauseEnabled">SetFocus(600)</onload>
+	<onload condition="!Player.PauseEnabled">SetFocus(606)</onload>
 	<onunload condition="Player.ShowInfo + !Skin.HasSetting(UseExtInfo)">Info</onunload>
 	<zorder>2</zorder>
 	<controls>
@@ -155,10 +155,20 @@
 				<include>DialogOpenCloseVisible</include>
 				<control type="image">
 					<visible>ControlGroup(101).HasFocus()</visible>
+					<visible>!VideoPlayer.HasTeletext</visible>
 					<centerleft>956</centerleft>
-					<centertop>588</centertop>
+					<centertop>578</centertop>
 					<width>610</width>
 					<height>500</height>
+					<texture colordiffuse="$VAR[OSDTransperancy]" border="128">img/DialogCE.png</texture>
+				</control>
+				<control type="image">
+					<visible>ControlGroup(101).HasFocus()</visible>
+					<visible>VideoPlayer.HasTeletext</visible>
+					<centerleft>956</centerleft>
+					<centertop>608</centertop>
+					<width>610</width>
+					<height>570</height>
 					<texture colordiffuse="$VAR[OSDTransperancy]" border="128">img/DialogCE.png</texture>
 				</control>
 				<control type="grouplist" id="101" description="Video OSD Options">
@@ -167,7 +177,7 @@
 					<centerleft>1010</centerleft>
 					<centertop>608</centertop>
 					<width>576</width>
-					<height>400</height>
+					<height>420</height>
 					<itemgap>0</itemgap>
 					<onleft>602</onleft>
 					<onright>602</onright>
@@ -206,6 +216,13 @@
 						<include>9000Buttons</include>
 						<label>21445</label>
 						<onclick>CodecInfo</onclick>
+					</control>
+					<control type="button" id="709">
+						<include>9000Buttons</include>
+						<label>23050</label>
+						<onclick>Dialog.Close(VideoOSD)</onclick>
+						<onclick>ActivateWindow(Teletext)</onclick>
+						<visible>VideoPlayer.HasTeletext</visible>
 					</control>
 				</control>
 			</control>
