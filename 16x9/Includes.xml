@@ -386,6 +386,7 @@
 	<include name="MediaHeader">
 		<!--<include>SystemClock</include>-->
 		<control type="group" description="Player Info">
+			<visible>!Player.HasVideo + !Player.HasGame + !VideoPlayer.HasEpg</visible>
 			<visible>!Control.HasFocus(300) + Player.HasAudio + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(MyPlaylist.xml)]</visible>
 			<visible>!Integer.IsGreater(Player.Time,8) | !Integer.IsGreater(Player.TimeRemaining,8)</visible>
 			<include>VisibleFadeEffect</include>

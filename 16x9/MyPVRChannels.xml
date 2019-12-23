@@ -92,7 +92,7 @@
 						<control type="label" description="Number">
 							<left>12</left>
 							<height>99</height>
-							<width>86</width>
+							<width>96</width>
 							<align>center</align>
 							<aligny>center</aligny>
 							<info>ListItem.ChannelNumberLabel</info>
@@ -134,7 +134,7 @@
 						<control type="label" description="Number">
 							<left>12</left>
 							<height>99</height>
-							<width>86</width>
+							<width>96</width>
 							<align>center</align>
 							<aligny>center</aligny>
 							<info>ListItem.ChannelNumberLabel</info>
@@ -209,7 +209,7 @@
 					<left>142</left>
 					<top>213</top>
 					<width>600</width>
-					<height>12</height>
+					<height>22</height>
 					<align>center</align>
 					<visible>ListItem.HasEpg</visible>
 					<info>ListItem.Progress</info>
