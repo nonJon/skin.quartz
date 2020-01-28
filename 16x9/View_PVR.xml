@@ -188,15 +188,15 @@
 					<control type="label">
 						<left>4</left>
 						<posy>0</posy>
-						<width>76</width>
+						<width>81</width>
 						<height>63</height>
 						<font>size17</font>
 						<align>right</align>
 						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="label" id="1" description="Column 1 selected">
-						<posx>91</posx>
-						<width>225</width>
+						<posx>96</posx>
+						<width>220</width>
 						<height>63</height>
 						<font>size17</font>
 						<label>$INFO[ListItem.ChannelName]</label>
@@ -214,7 +214,7 @@
 					<control type="label" description="Column 1 FO">
 						<left>4</left>
 						<posy>0</posy>
-						<width>76</width>
+						<width>81</width>
 						<height>63</height>
 						<font>size17</font>
 						<align>right</align>
@@ -223,8 +223,8 @@
 						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="label" id="1" description="Column 1 Focused">
-						<posx>91</posx>
-						<width>225</width>
+						<posx>96</posx>
+						<width>220</width>
 						<height>63</height>
 						<font>size17</font>
 						<textcolor>White2</textcolor>
