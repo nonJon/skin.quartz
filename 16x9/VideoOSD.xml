@@ -155,20 +155,10 @@
 				<include>DialogOpenCloseVisible</include>
 				<control type="image">
 					<visible>ControlGroup(101).HasFocus()</visible>
-					<visible>!VideoPlayer.HasTeletext</visible>
 					<centerleft>956</centerleft>
 					<centertop>578</centertop>
 					<width>610</width>
 					<height>500</height>
-					<texture colordiffuse="$VAR[OSDTransperancy]" border="128">img/DialogCE.png</texture>
-				</control>
-				<control type="image">
-					<visible>ControlGroup(101).HasFocus()</visible>
-					<visible>VideoPlayer.HasTeletext</visible>
-					<centerleft>956</centerleft>
-					<centertop>608</centertop>
-					<width>610</width>
-					<height>570</height>
 					<texture colordiffuse="$VAR[OSDTransperancy]" border="128">img/DialogCE.png</texture>
 				</control>
 				<control type="grouplist" id="101" description="Video OSD Options">
@@ -216,13 +206,6 @@
 						<include>9000Buttons</include>
 						<label>21445</label>
 						<onclick>CodecInfo</onclick>
-					</control>
-					<control type="button" id="709">
-						<include>9000Buttons</include>
-						<label>23050</label>
-						<onclick>Dialog.Close(VideoOSD)</onclick>
-						<onclick>ActivateWindow(Teletext)</onclick>
-						<visible>VideoPlayer.HasTeletext</visible>
 					</control>
 				</control>
 			</control>
