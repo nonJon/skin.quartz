@@ -165,7 +165,7 @@
 	<include name="MuteIcon">
 		<control type="group">
 			<visible>!Skin.HasSetting(DebugInfo)</visible>
-			<visible>!Window.IsVisible(CustomFanart.xml) + !Window.IsActive(fullscreenvideo) + !Window.IsActive(FullscreenGame)</visible>
+			<visible>!Window.IsVisible(CustomFanart.xml) + !Window.IsActive(fullscreenvideo) + !Window.IsActive(FullscreenGame) +  !Window.IsVisible(DialogExtendedProgressBar.xml)</visible>
 			<visible>Player.Muted</visible>
 			<control type="image" description="Mute icon all windows">
 				<right>0</right>
@@ -179,7 +179,7 @@
 	<include name="SystemClock">
 		<control type="label" description="Clock all windows">
 			<visible>Skin.HasSetting(ShowClock) + !Skin.HasSetting(DebugInfo)</visible>
-			<visible>![Window.IsVisible(CustomFanart.xml) | Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(MusicVisualisation.xml)]</visible>
+			<visible>![Window.IsVisible(CustomFanart.xml) | Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]</visible>
 			<right>65</right>
 			<posy>0</posy>
 			<width>500</width>
@@ -188,7 +188,50 @@
 			<aligny>center</aligny>
 			<font>size25</font>
 			<textcolor>Grey3</textcolor>
+			<include>VisibleFadeEffect</include>
 			<label>$INFO[System.Time]</label>
+		</control>
+	</include>
+	<include name="Weather">
+		<control type="grouplist">
+			<visible>Weather.IsFetched</visible>
+			<visible>Skin.HasSetting(ShowWeather) + !Skin.HasSetting(DebugInfo)</visible>
+			<visible>![Window.IsVisible(CustomFanart.xml) | Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]</visible>
+			<left>65</left>
+			<width>1000</width>
+			<height>75</height>
+			<orientation>horizontal</orientation>
+			<align>left</align>
+			<aligny>center</aligny>
+			<itemgap>0</itemgap>
+			<include>VisibleFadeEffect</include>
+			<control type="label" description="Current temp">
+				<visible>Weather.IsFetched | true</visible>
+				<width min="0" max="300">auto</width>
+				<!--<height>30</height>-->
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>size25</font>
+				<textcolor>Grey3</textcolor>
+				<label>$INFO[Window(Weather).Property(Current.Temperature)]</label>
+			</control>
+			<control type="label" description="Temp units">
+				<width min="0" max="100">auto</width>
+				<height>66</height>
+				<font>size14</font>
+				<aligny>center</aligny>
+				<label>$INFO[System.TemperatureUnits]</label>
+				<textcolor>Grey3</textcolor>
+				<visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
+			</control>
+			<control type="label" description="Current conditions">
+				<width>500</width>
+				<height>66</height>
+				<font>size14</font>
+				<aligny>center</aligny>
+				<label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
+				<textcolor>Grey3</textcolor>
+			</control>
 		</control>
 	</include>
 	<include name="DiffuseBG">
