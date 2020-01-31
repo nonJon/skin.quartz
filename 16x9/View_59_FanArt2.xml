@@ -151,7 +151,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label" description="Main Label">
-							<visible>!$EXP[IsVideoHD] | ListItem.IsFolder]</visible>
+							<visible>!$EXP[IsVideoHD] | ListItem.IsFolder</visible>
 							<width>711</width>
 							<include>52MainLabel</include>
 							<label>$INFO[ListItem.Label]</label>
