@@ -776,6 +776,7 @@
 					<texture>$VAR[ShelfIcon]</texture>
 				</control>
 				<control type="image" description="Logo">
+					<visible>!Skin.HasSetting(HideKodiLogo)</visible>
 					<visible>[ControlGroup(9000).HasFocus(300) + !Skin.HasSetting(MoviesShelf_Image) + !Control.IsVisible(310)] |
 					[ControlGroup(9000).HasFocus(301) + !Skin.HasSetting(PVRShelf_Image) + !Control.IsVisible(311)] | 
 					[ControlGroup(9000).HasFocus(302) + !Skin.HasSetting(TVShelf_Image) + !Control.IsVisible(312)] | [ControlGroup(9000).HasFocus(303) + !Skin.HasSetting(MusicShelf_Image) + !Control.IsVisible(313)] | [ControlGroup(9000).HasFocus(304) + !Skin.HasSetting(PicturesShelf_Image) + !Control.IsVisible(314)] | [ControlGroup(9000).HasFocus(305) + !Skin.HasSetting(AddonsShelf_Image) + !Control.IsVisible(315)] | [ControlGroup(9000).HasFocus(306) + !Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible>

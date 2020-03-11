@@ -142,9 +142,9 @@
 							</control>
 							<control type="progress" description="Progress Bar">
 								<posx>122</posx>
-								<posy>3</posy>
+								<posy>7</posy>
 								<width>675</width>
-								<height>24</height>
+								<height>17</height>
 								<!-- <texturebg>Controls/ProgressBackground.png</texturebg>  -->
 								<info>Player.Progress</info>
 							</control>
@@ -260,9 +260,9 @@
 						</control>
 						<control type="progress" description="Progress Bar">
 							<posx>232</posx>
-							<posy>3</posy>
+							<posy>7</posy>
 							<width>675</width>
-							<height>24</height>
+							<height>17</height>
 							<!-- <texturebg>Controls/ProgressBackground.png</texturebg> -->
 							<info>Player.Progress</info>
 						</control>

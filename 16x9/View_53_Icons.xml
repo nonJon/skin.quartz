@@ -355,6 +355,7 @@
 				<texture>$VAR[Overlay]</texture>
 			</control>
 			<control type="image" description="Sets">
+				<visible>!Skin.HasSetting(HideSetsIcon)</visible>
 				<visible>String.Contains(ListItem.Path,videodb://movies/sets/)</visible>
 				<posx>50</posx>
 				<posy>123</posy>

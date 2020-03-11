@@ -171,6 +171,7 @@
 						<posx>0</posx>
 						<posy>180</posy>
 						<control type="image" description="Sets">
+							<visible>!Skin.HasSetting(HideSetsIcon)</visible>
 							<visible>String.Contains(ListItem.Path,videodb://movies/sets/)</visible>
 							<posx>-57</posx>
 							<posy>-10</posy>
