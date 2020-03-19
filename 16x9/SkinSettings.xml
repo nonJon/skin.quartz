@@ -788,7 +788,31 @@
 				<onleft>3000</onleft>
 				<pagecontrol>3001</pagecontrol>
 				<scrolltime tween="sine" easing="inout">280</scrolltime>
-				<control type="radiobutton" id="3500" description="Debug loggin">
+				<control type="button" id="3504" description="Reload Skin">
+					<include>SkinSettingsButton</include>
+					<label>$LOCALIZE[31972]</label>
+					<onclick>XBMC.ReloadSkin()</onclick>
+				</control>	
+				<control type="button" id="3502" description="Backup Skin">
+					<include>SkinSettingsButton</include>
+					<label>$LOCALIZE[31134]</label>
+					<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
+					<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
+				</control>
+				<control type="button" id="3503" description="Restore Skin">
+					<include>SkinSettingsButton</include>
+					<label>$LOCALIZE[31136]</label>
+					<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
+					<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup)</onclick>
+				</control>
+				<control type="radiobutton" id="3501" description="Debug logging">
+					<include>SkinSettingsButton</include>
+					<label>$LOCALIZE[20191]</label>
+					<onclick>ToggleDebug</onclick>
+					<selected>System.GetBool(debug.showloginfo)</selected>
+					<radioposx>1210</radioposx>
+				</control>				
+				<control type="radiobutton" id="3500" description="Debug">
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[31130]</label>
 					<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
@@ -801,25 +825,6 @@
 					<onclick>Skin.ToggleSetting(_DebugGrid)</onclick>
 					<selected>Skin.HasSetting(_DebugGrid)</selected>
 					<radioposx>1210</radioposx>
-				</control>
-				<control type="radiobutton" id="3501" description="Debug logging">
-					<include>SkinSettingsButton</include>
-					<label>$LOCALIZE[20191]</label>
-					<onclick>ToggleDebug</onclick>
-					<selected>System.GetBool(debug.showloginfo)</selected>
-					<radioposx>1210</radioposx>
-				</control>
-				<control type="button" id="3502" description="Backup Skin">
-					<include>SkinSettingsButton</include>
-					<label>$LOCALIZE[31134]</label>
-					<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
-					<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
-				</control>
-				<control type="button" id="3503" description="Restore Skin">
-					<include>SkinSettingsButton</include>
-					<label>$LOCALIZE[31136]</label>
-					<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
-					<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup)</onclick>
 				</control>
 				<control type="radiobutton" id="3508" description="low power mode">
 					<visible>true</visible>
@@ -845,7 +850,7 @@
 					<onclick condition="Skin.HasSetting(LowPowerMode) + Skin.HasSetting(Disable501)">Skin.Reset(Disable501)</onclick>
 					<onclick condition="Skin.HasSetting(LowPowerMode) + Skin.HasSetting(Disable502)">Skin.Reset(Disable502)</onclick>
 					<radioposx>1210</radioposx>
-				</control>
+				</control>				
 			</control>
 			<control type="grouplist" id="3060" description="About">
 				<visible>Container(3000).HasFocus(3106)</visible>

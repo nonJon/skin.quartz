@@ -1484,8 +1484,7 @@
 		<alttexturefocus>img/MediaButton2.png</alttexturefocus>
 	</include>
 	<include name="9000ButtonsBlade">
-		<width>540</width>
-		<textoffsetx>0</textoffsetx>
+		<width>520</width>
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>size24</font>

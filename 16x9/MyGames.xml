@@ -112,8 +112,8 @@
 				</control>
 				<control type="togglebutton" id="4" description="Ordering">
 					<include>9000Buttons</include>
-					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
-					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+					<label>$LOCALIZE[21429]: $LOCALIZE[584]</label>
+					<altlabel>$LOCALIZE[21429]: $LOCALIZE[585]</altlabel>
 				</control>
 				<include>DialogFilterButton</include>
 			</control>

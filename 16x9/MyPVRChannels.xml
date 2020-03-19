@@ -18,7 +18,7 @@
 					<posy>11</posy>
 					<width>878</width>
 					<height>440</height>
-					<texture fallback="special://skin/extras/backgrounds/tv.jpg">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</texture>
+					<texture fallback="special://skin/extras/backgrounds/tv.jpg">$INFO[Skin.String(CustomChannelsBackgroundImage)]</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>!Player.HasVideo</visible>
 				</control>
@@ -227,9 +227,9 @@
 				<posx>60</posx>
 				<posy>480</posy>
 				<control type="label" description="Title above progress">
-					<posx>70</posx>
+					<posx>0</posx>
 					<posy>125</posy>
-					<width>700</width>
+					<width>878</width>
 					<font>size24</font>
 					<textcolor>HL</textcolor>
 					<align>center</align>
