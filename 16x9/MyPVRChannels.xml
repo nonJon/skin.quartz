@@ -38,14 +38,6 @@
 					<height>450</height>
 					<texture border="5">img/CoverOverlay0.png</texture>
 				</control>
-				<control type="label">
-					<posy>-48</posy>
-					<font>size17</font>
-					<width>758</width>
-					<textcolor>Grey</textcolor>
-					<include>Genre51Commons</include>
-					<label>$INFO[VideoPlayer.Title,$LOCALIZE[31023]: ]</label>
-				</control>
 			</control>
 			<control type="group" description="Slider and List">
 				<posx>1030</posx>

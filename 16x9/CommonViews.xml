@@ -1497,13 +1497,64 @@
 	<include name="9000Commons" description="Regular BG">
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
 		<include>DialogOpenCloseVisible</include>
-		<control type="image" description="List back">
+		<control type="group">
 			<centerleft>960</centerleft>
-			<centertop>570</centertop>
 			<width>610</width>
-			<height>690</height>
-			<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
-		</control>
+			<control type="image" description="List back">
+				<visible>Integer.IsEqual(Container(9000).NumItems,9)</visible>
+				<centertop>570</centertop>
+				<height>690</height>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>
+			<control type="image" description="List back">
+				<visible>Integer.IsEqual(Container(9000).NumItems,8)</visible>
+				<centertop>540</centertop>
+				<height>630</height>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>	
+			<control type="image" description="List back">
+				<visible>Integer.IsEqual(Container(9000).NumItems,7)</visible>
+				<centertop>510</centertop>
+				<height>570</height>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>		
+			<control type="image" description="List back">
+				<visible>Integer.IsEqual(Container(9000).NumItems,6)</visible>
+				<centertop>480</centertop>
+				<height>510</height>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>	
+			<control type="image" description="List back">
+				<visible>Integer.IsEqual(Container(9000).NumItems,5)</visible>
+				<centertop>450</centertop>
+				<height>450</height>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>	
+			<control type="image" description="List back">
+				<visible>Integer.IsEqual(Container(9000).NumItems,4)</visible>
+				<centertop>420</centertop>
+				<height>390</height>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>	
+			<control type="image" description="List back">
+				<visible>Integer.IsEqual(Container(9000).NumItems,3)</visible>
+				<centertop>390</centertop>
+				<height>330</height>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>		
+			<control type="image" description="List back">
+				<visible>Integer.IsEqual(Container(9000).NumItems,2)</visible>
+				<centertop>360</centertop>
+				<height>270</height>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>		
+			<control type="image" description="List back">
+				<visible>Integer.IsEqual(Container(9000).NumItems,1)</visible>
+				<centertop>330</centertop>
+				<height>210</height>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>				
+		</control>	
 	</include>
 	<include name="Plot51Commons">
 		<posx>0</posx>
