@@ -583,6 +583,7 @@
 				</control>
 				<control type="togglebutton" id="20" description="Update library">
 					<visible>!Skin.HasSetting(LibUpdateOff)</visible>
+					<visible>!String.IsEqual(Container.FolderPath,addons://sources/audio)</visible>
 					<include>9000Buttons</include>
 					<label>653</label>
 					<altlabel>13353</altlabel>
