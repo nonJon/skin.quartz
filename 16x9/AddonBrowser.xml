@@ -148,6 +148,7 @@
 					<label>$INFO[ListItem.AddonDisclaimer]</label>
 				</control>
 				<control type="label" description="2 bottom Label">
+					<visible>!String.IsEmpty(ListItem.AddonVersion)</visible>
 					<visible>container.content(addons)</visible>
 					<posy>380</posy>
 					<width>655</width>

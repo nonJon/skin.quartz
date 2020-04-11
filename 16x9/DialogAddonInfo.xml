@@ -98,6 +98,7 @@
 				<align>center</align>
 				<orientation>horizontal</orientation>
 				<control type="button" id="6" description="Install">
+					<visible>Control.IsEnabled(6)</visible>
 					<height>66</height>
 					<width>270</width>
 					<align>center</align>
@@ -105,6 +106,7 @@
 					<label>24038</label>
 				</control>
 				<control type="button" id="7" description="Disable">
+					<visible>Control.IsEnabled(7)</visible>
 					<height>66</height>
 					<width>270</width>
 					<align>center</align>
@@ -112,6 +114,7 @@
 					<label>24021</label>
 				</control>
 				<control type="button" id="8" description="update">
+					<visible>Control.IsEnabled(8)</visible>
 					<height>66</height>
 					<width>270</width>
 					<align>center</align>
@@ -137,6 +140,7 @@
 					<visible>Control.IsEnabled(13)</visible>
 				</control>				
 				<control type="button" id="9" description="settings">
+					<visible>Control.IsEnabled(9)</visible>
 					<height>66</height>
 					<width>270</width>
 					<align>center</align>
@@ -144,6 +148,7 @@
 					<label>5</label>
 				</control>
 				<control type="button" id="10" description="dependencies">
+					<visible>Control.IsEnabled(10)</visible>
 					<height>66</height>
 					<width>270</width>
 					<align>center</align>
@@ -151,6 +156,7 @@
 					<label>$LOCALIZE[39024]</label>
 				</control>				
 				<control type="button" id="12" description="use">
+					<visible>Control.IsEnabled(12)</visible>
 					<height>66</height>
 					<width>270</width>
 					<align>center</align>
