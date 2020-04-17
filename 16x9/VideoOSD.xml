@@ -31,7 +31,7 @@
 							<onright condition="Player.SeekEnabled">601</onright>
 							<onright condition="!Player.SeekEnabled">606</onright>
 							<ondown condition="Player.PauseEnabled">603</ondown>
-							<onclick>XBMC.PlayerControl(Stop)</onclick>
+							<onclick>PlayerControl(Stop)</onclick>
 						</control>
 						<control type="button" id="601">
 							<visible>player.PauseEnabled</visible>
@@ -43,7 +43,7 @@
 							<onup>606</onup>
 							<onleft>600</onleft>
 							<onright>602</onright>
-							<onclick>XBMC.PlayerControl(Previous)</onclick>
+							<onclick>PlayerControl(Previous)</onclick>
 						</control>
 						<control type="button" id="601">
 							<visible>!player.SeekEnabled</visible>
@@ -62,7 +62,7 @@
 							<onleft>601</onleft>
 							<onright>603</onright>
 							<onup>606</onup>
-							<onclick>XBMC.PlayerControl(Rewind)</onclick>
+							<onclick>PlayerControl(Rewind)</onclick>
 						</control>
 						<control type="button" id="602">
 							<visible>!player.SeekEnabled</visible>
@@ -85,7 +85,7 @@
 							<onright>604</onright>
 							<onup>606</onup>
 							<ondown>600</ondown>
-							<onclick>XBMC.PlayerControl(Play)</onclick>
+							<onclick>PlayerControl(Play)</onclick>
 						</control>
 						<control type="togglebutton" id="603">
 							<visible>!player.PauseEnabled</visible>
@@ -106,7 +106,7 @@
 							<onleft>603</onleft>
 							<onright>605</onright>
 							<onup>606</onup>
-							<onclick>XBMC.PlayerControl(Forward)</onclick>
+							<onclick>PlayerControl(Forward)</onclick>
 						</control>
 						<control type="button" id="604">
 							<visible>!player.SeekEnabled</visible>
@@ -125,7 +125,7 @@
 							<onleft>604</onleft>
 							<onright>606</onright>
 							<onup>606</onup>
-							<onclick>XBMC.PlayerControl(Next)</onclick>
+							<onclick>PlayerControl(Next)</onclick>
 						</control>
 						<control type="button" id="605">
 							<visible>!player.SeekEnabled</visible>

@@ -133,11 +133,6 @@
 					<altlabel>13353</altlabel>
 					<usealttexture>library.isscanningvideo</usealttexture>
 				</control>
-				<control type="button" id="698" description="Browse files">
-					<include>9000Buttons</include>
-					<label>$LOCALIZE[1024] [LOWERCASE]$LOCALIZE[744][/LOWERCASE]</label>
-					<onclick>ActivateWindow(Videos,files)</onclick>
-				</control>
 				<include>DialogFilterButton</include>
 				<control type="button" id="697" description="Playlist">
 					<include>9000Buttons</include>

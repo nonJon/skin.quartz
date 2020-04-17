@@ -581,14 +581,6 @@
 					<onclick>Skin.SetImage(CustomBackgroundPath)</onclick>
 					<enable>Skin.HasSetting(UseCustomBackground)</enable>
 				</control>  
-				<control type="radiobutton" id="3404" description="Hide live tv">
-					<visible>System.HasPVRAddon + Skin.HasSetting(PVRSectionHide)</visible>
-					<include>SkinSettingsButton</include>
-					<label>$LOCALIZE[31186]</label>
-					<onclick>Skin.ToggleSetting(HideLiveTV)</onclick>
-					<selected>Skin.HasSetting(HideLiveTV)</selected>
-					<radioposx>1210</radioposx>
-				</control>
 				<control type="radiobutton" id="3405" description="RSS ticker">
 					<visible>false</visible>
 					<visible>!Skin.HasSetting(LowPowerMode)</visible>
@@ -791,7 +783,7 @@
 				<control type="button" id="3504" description="Reload Skin">
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[31972]</label>
-					<onclick>XBMC.ReloadSkin()</onclick>
+					<onclick>ReloadSkin()</onclick>
 				</control>	
 				<control type="button" id="3502" description="Backup Skin">
 					<include>SkinSettingsButton</include>
@@ -938,7 +930,7 @@
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[31141]</label>
 					<onclick>Skin.ResetSettings</onclick>
-					<onclick>XBMC.ReloadSkin()</onclick>
+					<onclick>ReloadSkin()</onclick>
 				</control>
 			</control>			
 		</control>

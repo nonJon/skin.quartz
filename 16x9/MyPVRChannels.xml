@@ -18,7 +18,7 @@
 					<posy>11</posy>
 					<width>878</width>
 					<height>440</height>
-					<texture fallback="special://skin/extras/backgrounds/tv.jpg">$INFO[Skin.String(CustomChannelsBackgroundImage)]</texture>
+					<texture fallback="special://skin/extras/backgrounds/KodiBG120.jpg">$INFO[Skin.String(CustomChannelsBackgroundImage)]</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>!Player.HasVideo</visible>
 				</control>

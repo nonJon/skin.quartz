@@ -361,18 +361,13 @@
 						<include>Animation301</include>
 					</control>
 					<control type="list" id="302" description="TVShows">
-						<visible>!Skin.HasSetting(TVSectionHide) | [System.HasPVRAddon + Skin.HasSetting(PVRSectionHide) + !Skin.HasSetting(HideLiveTV)]</visible>
+						<visible>!Skin.HasSetting(TVSectionHide) | [System.HasPVRAddon + Skin.HasSetting(PVRSectionHide)]</visible>
 						<onleft>301</onleft>
 						<onright>303</onright>
 						<onup>312</onup>
 						<ondown>302</ondown>
 						<include>Sublist</include>
 						<content>
-							<item id="0" description="LiveTV">
-								<visible>System.HasPVRAddon + Skin.HasSetting(PVRSectionHide) + !Skin.HasSetting(HideLiveTV)</visible>
-								<label>31502</label>
-								<onclick>XBMC.ActivateWindow(tvchannels)</onclick>
-							</item> 
 							<item id="10" description="MyTV">
 								<visible>!Skin.HasSetting(TV1)</visible>
 								<visible>Library.HasContent(TVShows)</visible>
@@ -596,7 +591,7 @@
 							<item id="3" description="Picture apps">
 								<visible>!Skin.HasSetting(Addons3)</visible>
 								<label>1</label>
-								<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
+								<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 							</item>
 							<item id="4" description="Video apps">
 								<visible>!Skin.HasSetting(Addons4)</visible>
@@ -656,7 +651,7 @@
 							<item id="0" description="Reload Skin">
 								<visible>!Skin.HasSetting(XBMC5)</visible>
 								<label>31972</label>
-								<onclick>XBMC.ReloadSkin()</onclick>
+								<onclick>ReloadSkin()</onclick>
 							</item>
 
 							<item id="1" description="Update library">
@@ -696,12 +691,12 @@
 							<item id="7" description="Master mode button">
 								<visible>System.HasLocks + System.IsMaster</visible>
 								<label>12332</label>
-								<onclick>xbmc.mastermode</onclick>
+								<onclick>mastermode</onclick>
 							</item>
 							<item id="8" description="Master mode button">
 								<visible>System.HasLocks + !System.IsMaster</visible>
 								<label>12333</label>
-								<onclick>xbmc.mastermode</onclick>
+								<onclick>mastermode</onclick>
 							</item>
 							<item id="9" description="Disc">
 								<visible>![System.Platform.ios | System.Platform.atv2]</visible>
@@ -717,27 +712,27 @@
 							<item id="11" description="Quit">
 								<visible>!Skin.HasSetting(XBMC4) + String.IsEqual(Skin.String(shutdown),quit)</visible>
 								<label fallback="13009">$VAR[QuitLabel2]</label>
-								<onclick>XBMC.quit()</onclick>
+								<onclick>quit()</onclick>
 							</item>
 							<item id="12" description="Quit">
 								<visible>!Skin.HasSetting(XBMC4) + String.IsEqual(Skin.String(shutdown),powerdown)</visible>
 								<label fallback="13009">$VAR[QuitLabel2]</label>
-								<onclick>XBMC.powerdown()</onclick>
+								<onclick>powerdown()</onclick>
 							</item>
 							<item id="13" description="Quit">
 								<visible>!Skin.HasSetting(XBMC4) + String.IsEqual(Skin.String(shutdown),hibernate)</visible>
 								<label fallback="13009">$VAR[QuitLabel2]</label>
-								<onclick>XBMC.hibernate()</onclick>
+								<onclick>hibernate()</onclick>
 							</item>
 							<item id="14" description="Quit">
 								<visible>!Skin.HasSetting(XBMC4) + String.IsEqual(Skin.String(shutdown),suspend)</visible>
 								<label fallback="13009">$VAR[QuitLabel2]</label>
-								<onclick>XBMC.suspend()</onclick>
+								<onclick>suspend()</onclick>
 							</item>
 							<item id="15" description="Quit">
 								<visible>!Skin.HasSetting(XBMC4) + String.IsEqual(Skin.String(shutdown),reboot)</visible>
 								<label fallback="13009">$VAR[QuitLabel2]</label>
-								<onclick>XBMC.reboot()</onclick>
+								<onclick>reboot()</onclick>
 							</item>
 						</content>
 						<include>Animation306</include>

@@ -88,7 +88,7 @@
 					<width>180</width>
 					<height>240</height>
 					<bordersize>8</bordersize>
-					<texture>$INFO[Player.Icon]</texture>
+					<texture>$INFO[Player.Art(poster)]</texture>
 					<aspectratio align="left">stretch</aspectratio>
 				</control>
 				<control type="image" id="1">

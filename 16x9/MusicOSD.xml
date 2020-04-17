@@ -182,7 +182,7 @@
 					<usealttexture>Playlist.IsRandom</usealttexture>
 					<alttexturefocus colordiffuse="HL">MusicOSD/OSDRandomOn.png</alttexturefocus>
 					<alttexturenofocus>MusicOSD/OSDRandomOn.png</alttexturenofocus>
-					<onclick>XBMC.PlayerControl(Random)</onclick>
+					<onclick>PlayerControl(Random)</onclick>
 				</control>
 				<control type="button" id="609">
 					<description>Options</description>

@@ -117,7 +117,7 @@
 								<width>240</width>
 								<height>356</height>
 								<fadetime>50</fadetime>
-								<texture background="true" fallback="DefaultVideos.png">$INFO[ListItem.Icon]</texture>
+								<texture background="true" fallback="DefaultVideos.png">$INFO[ListItem.Art(poster)]</texture>
 								<aspectratio>scale</aspectratio>
 							</control>
 							<control type="image" description="Other poster">
