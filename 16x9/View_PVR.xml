@@ -73,6 +73,12 @@
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
 					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
 				</control>
+				<control type="button" id="113" description="Timer Rules">
+					<include>9000ButtonsBlade</include>
+					<label>19138</label>
+					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick>
+					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimerRules)</onclick>
+				</control>
 				<control type="button" id="104" description="Search">
 					<include>9000ButtonsBlade</include>
 					<label>137</label>

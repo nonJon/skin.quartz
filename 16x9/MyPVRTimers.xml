@@ -27,27 +27,30 @@
 						<description>Title header label</description>
 						<posx>20</posx>
 						<posy>0</posy>
-						<width>450</width>
+						<width>550</width>
 						<height>30</height>
 						<label>$LOCALIZE[369]</label>
 					</control>
 					<control type="label">
+						<visible>!String.IsEqual(Container.FolderName,rules)</visible>
 						<description>Schedule Time header label</description>
-						<posx>520</posx>
+						<posx>820</posx>
 						<posy>0</posy>
-						<width>550</width>
+						<width>750</width>
 						<height>30</height>
 						<label>$LOCALIZE[31501]</label>
 					</control>
 					<control type="label">
-						<description>Channel header label</description>
-						<posx>1120</posx>
+						<visible>!String.IsEqual(Container.FolderName,rules)</visible>
+						<description>Status header label</description>
+						<posx>1620</posx>
 						<posy>0</posy>
-						<width>380</width>
+						<width>180</width>
 						<height>30</height>
-						<label>$LOCALIZE[19029]</label>
+						<label>$LOCALIZE[126]</label>
 					</control>
 					<control type="label">
+						<visible>String.IsEqual(Container.FolderName,rules)</visible>
 						<description>Status header label</description>
 						<posx>1520</posx>
 						<posy>0</posy>
@@ -78,28 +81,43 @@
 						<control type="label" description="Timer label">
 							<posx>10</posx>
 							<posy>0</posy>
-							<width>480</width>
+							<width>780</width>
 							<height>78</height>
 							<scroll>false</scroll>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label][COLOR grey]$INFO[ListItem.ChannelName, - ][/COLOR]</label>
 						</control>
 						<control type="label" description="Date">
-							<posx>510</posx>
+							<visible>!String.IsEqual(Container.FolderName,rules)</visible>
+							<posx>810</posx>
 							<posy>0</posy>
-							<width>580</width>
+							<width>780</width>
 							<height>78</height>
 							<scroll>false</scroll>
+							<font>size18</font>
 							<info>ListItem.Date</info>
 						</control>
-						<control type="label" description="Channel label">
-							<posx>1110</posx>
+						<control type="label" description="Timer Type">
+							<visible>String.IsEqual(Container.FolderName,rules)</visible>
+							<posx>810</posx>
 							<posy>0</posy>
-							<width>380</width>
+							<width>680</width>
 							<height>78</height>
 							<scroll>false</scroll>
-							<info>ListItem.ChannelName</info>
+							<font>size18</font>
+							<info>ListItem.Timertype</info>
 						</control>
-						<control type="label" description="Comment">
+						<control type="label" description="Timer Status">
+							<visible>!String.IsEqual(Container.FolderName,rules)</visible>
+							<posx>1610</posx>
+							<posy>0</posy>
+							<width>180</width>
+							<height>78</height>
+							<scroll>false</scroll>
+							<font>size18</font>
+							<info>ListItem.Comment</info>
+						</control>
+						<control type="label" description="Rule Status">
+							<visible>String.IsEqual(Container.FolderName,rules)</visible>
 							<posx>1510</posx>
 							<posy>0</posy>
 							<width>280</width>
@@ -127,28 +145,43 @@
 						<control type="label" description="Timer label">
 							<posx>10</posx>
 							<posy>0</posy>
-							<width>480</width>
+							<width>780</width>
 							<height>78</height>
-							<scroll>false</scroll>
-							<info>ListItem.Label</info>
+							<scroll>true</scroll>
+							<label>$INFO[ListItem.Label][COLOR grey]$INFO[ListItem.ChannelName, - ][/COLOR]</label>
 						</control>
 						<control type="label" description="Date">
-							<posx>510</posx>
+							<visible>!String.IsEqual(Container.FolderName,rules)</visible>
+							<posx>810</posx>
 							<posy>0</posy>
-							<width>580</width>
+							<width>780</width>
 							<height>78</height>
+							<font>size18</font>
 							<scroll>false</scroll>
 							<info>ListItem.Date</info>
 						</control>
-						<control type="label" description="Channel label">
-							<posx>1110</posx>
+						<control type="label" description="Type">
+							<visible>String.IsEqual(Container.FolderName,rules)</visible>
+							<posx>810</posx>
 							<posy>0</posy>
-							<width>380</width>
+							<width>680</width>
 							<height>78</height>
+							<font>size18</font>
 							<scroll>false</scroll>
-							<info>ListItem.ChannelName</info>
+							<info>ListItem.TimerType</info>
 						</control>
-						<control type="label" description="Comment">
+						<control type="label" description="Timer Status">
+							<visible>!String.IsEqual(Container.FolderName,rules)</visible>
+							<posx>1610</posx>
+							<posy>0</posy>
+							<width>180</width>
+							<height>78</height>
+							<font>size18</font>
+							<scroll>false</scroll>
+							<info>ListItem.Comment</info>
+						</control>
+						<control type="label" description="Rule Status">
+							<visible>String.IsEqual(Container.FolderName,rules)</visible>
 							<posx>1510</posx>
 							<posy>0</posy>
 							<width>280</width>

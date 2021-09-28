@@ -352,6 +352,11 @@
 								<label>$LOCALIZE[19040]</label>
 								<onclick>ActivateWindow(tvtimers)</onclick>
 							</item>
+							<item id="10" description="Timer Rules">
+								<visible>!Skin.HasSetting(PVR4)</visible>
+								<label>$LOCALIZE[19138]</label>
+								<onclick>ActivateWindow(TVTimerRules)</onclick>
+							</item>
 							<item id="9" description="Search">
 								<visible>!Skin.HasSetting(PVR5)</visible>
 								<label>$LOCALIZE[137]</label>

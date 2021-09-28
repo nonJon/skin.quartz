@@ -305,7 +305,8 @@
 		<value condition="Container.content(musicvideos) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
 		<value condition="Window.IsActive(weather)">$INFO[Window(Weather).Property(WeatherProvider)]</value>
 		<value condition="Window.IsActive(TVSearch)">$LOCALIZE[137]</value>
-		<value condition="Window.IsVisible(MyPVRTimers.xml)">$LOCALIZE[19040]</value>
+		<value condition="Window.IsActive(TVTimers)">$LOCALIZE[19040]</value>
+		<value condition="Window.IsActive(TVTimerRules)">$LOCALIZE[19138]</value>
 		<value condition="Window.IsVisible(MyPVRRecordings.xml)">$LOCALIZE[20007]</value>
 		<value condition="Window.IsVisible(MyPVRChannels.xml)">$LOCALIZE[10700] ($INFO[Container.FolderName])</value>
 		<value condition="Window.IsVisible(MyPVRGuide.xml)">$LOCALIZE[10702] ($INFO[Control.GetLabel(30)])</value>
