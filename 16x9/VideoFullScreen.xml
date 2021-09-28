@@ -46,36 +46,36 @@
 			</control>
 			<control type="label" id="1" description="Clock">
 				<posx>27r</posx>
-				<posy>15</posy>
-				<width>195</width>
+				<posy>10</posy>
+				<width>250</width>
 				<height>60</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>size18</font>
+				<font>size22</font>
 				<label>$INFO[System.Time, , ]</label>
 			</control>
 			<control type="label" id="1" description="End time">
 				<visible>!String.isempty(Player.Duration)</visible>
 				<visible>Player.HasVideo + ![Player.HasGame | VideoPlayer.HasEpg]</visible>
 				<posx>27r</posx>
-				<posy>57</posy>
-				<width>195</width>
+				<posy>59</posy>
+				<width>250</width>
 				<height>60</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>size17</font>
+				<font>size22</font>
 				<textcolor>Grey2</textcolor>
 				<label>$INFO[Player.FinishTime,(,)]</label>
 			</control>
 			<control type="label" id="1" description="PVR end time">
 				<visible>VideoPlayer.HasEpg</visible>
 				<posx>27r</posx>
-				<posy>57</posy>
-				<width>195</width>
+				<posy>59</posy>
+				<width>250</width>
 				<height>60</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>size17</font>
+				<font>size22</font>
 				<textcolor>Grey2</textcolor>
 				<label>$INFO[PVR.EpgEventFinishTime,(,)]</label>
 			</control>
@@ -149,6 +149,12 @@
 						<font>size17</font>
 						<include>FullscreenInfoLabel2</include>
 						<label>$LOCALIZE[21396]$INFO[Player.Chapter, : ]$INFO[Player.ChapterCount, / ]</label>
+					</control>
+					<control type="label" id="1" description="Label 2">
+						<visible>VideoPlayer.Content(Files) + Pvr.IsPlayingRecording</visible>
+						<font>size17</font>
+						<include>FullscreenInfoLabel2</include>
+						<label>$INFO[VideoPlayer.StartTime]$INFO[VideoPlayer.EndTime, - ]</label>
 					</control>
 					<control type="label" id="1" description="Label 2">
 						<visible>VideoPlayer.Content(Episodes)</visible>
