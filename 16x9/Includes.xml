@@ -61,6 +61,8 @@
 	<include file="View_502_Panel.xml" />
 	<include file="View_510.xml" />
 	<include file="View_PVR.xml" />
+	<include file="View_PVR_EPG.xml" />
+	<include file="View_PVR_EPG_Dense.xml" />
 	<include file="Includes_Home.xml" />
 	<include file="Includes_Shelf.xml" />
 	<include file="Includes_Shelf_Items.xml" />

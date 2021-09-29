@@ -8,7 +8,8 @@
 		<control type="group" id="50">
 			<include>Header</include>
 			<include>OpenClose</include>
-			<include>EPGTimelineView</include>
+			<include condition="!Skin.HasSetting(DenseEPG)" >EPGTimelineView</include>
+			<include condition="Skin.HasSetting(DenseEPG)" >EPGTimelineViewDense</include>
 			<!-- view id = 10 -->
 			<include>LiveTVGuideNowView</include>
 			<!-- view id = 11 -->

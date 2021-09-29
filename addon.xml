@@ -33,6 +33,9 @@
 		<screenshot>resources/screenshot-06.jpg</screenshot>
 		<screenshot>resources/screenshot-07.jpg</screenshot>
 		<screenshot>resources/screenshot-08.jpg</screenshot>
+		<screenshot>resources/screenshot-09.jpg</screenshot>
+		<screenshot>resources/screenshot-pvr-01.jpg</screenshot>
+		<screenshot>resources/screenshot-pvr-02.jpg</screenshot>
 	</assets>
   </extension>
 </addon>

@@ -7,6 +7,11 @@
 			<size>23</size>
 		</font>
 		<font>
+			<name>EPGfontTime</name>
+			<filename>NotoSans-Regular.ttf</filename>
+			<size>28</size>
+		</font>
+		<font>
 			<name>Scroll</name>
 			<filename>arial.ttf</filename>
 			<size>100</size>
@@ -125,6 +130,11 @@
 			<filename>NotoSans-Regular.ttf</filename>
 			<size>23</size>
 			<style>bold</style>
+		</font>
+		<font>
+			<name>EPGfontTime</name>
+			<filename>NotoSans-Regular.ttf</filename>
+			<size>28</size>
 		</font>
 		<font>
 			<name>Scroll</name>
@@ -261,6 +271,11 @@
 			<size>23</size>
 		</font>
 		<font>
+			<name>EPGfontTime</name>
+			<filename>NotoSans-Regular.ttf</filename>
+			<size>28</size>
+		</font>
+		<font>
 			<name>Scroll</name>
 			<filename>NotoSans-Regular.ttf</filename>
 			<size>100</size>
@@ -378,6 +393,11 @@
 			<name>EPGfont</name>
 			<filename>Roboto-Regular.ttf</filename>
 			<size>23</size>
+		</font>
+		<font>
+			<name>EPGfontTime</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>28</size>
 		</font>
 		<font>
 			<name>Scroll</name>

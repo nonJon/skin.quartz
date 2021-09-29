@@ -85,6 +85,11 @@
 					<label>$LOCALIZE[31101]</label>
 					<onclick>noop</onclick>
 				</item>
+				<item id="3110" description="PVR &amp; Live TV">
+					<visible>true</visible>
+					<label>$LOCALIZE[14204]</label>
+					<onclick>noop</onclick>
+				</item>
 				<item id="3105" description="Advanced">
 					<label>$LOCALIZE[31104]</label>
 					<onclick>noop</onclick>
@@ -179,6 +184,7 @@
 					<onclick>Skin.Reset(HideFanart)</onclick>
 					<onclick>Skin.Reset(FanartVisibility)</onclick>
 					<onclick>Skin.Reset(shutdown)</onclick>
+					<onclick>Skin.Reset(DenseEPG)</onclick>
 					<onclick>Skin.Reset(WeatherFanart.name)</onclick>
 					<onclick>Skin.Reset(WeatherFanart.path)</onclick>
 					<onclick>ReloadSkin()</onclick>
@@ -686,7 +692,7 @@
 					<label2>$INFO[skin.string(AutoCloseTimeVideoOSD)] $LOCALIZE[31183]</label2>		
 					<onclick>Skin.SetNumeric(AutoCloseTimeVideoOSD)</onclick>
 				</control>
-			</control>
+				</control>
 			<control type="grouplist" id="3020" description="Icons">
 				<visible>Container(3000).HasFocus(3102)</visible>
 				<width>1280</width>
@@ -916,6 +922,22 @@
 					<onclick>ReloadSkin()</onclick>
 				</control>
 			</control>			
+			<control type="grouplist" id="4000" description="PVR &amp; Live TV">
+				<visible>Container(3000).HasFocus(3110)</visible>
+				<width>1280</width>
+				<height>900</height>
+				<onleft>3000</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime tween="sine" easing="inout">280</scrolltime>
+				<control type="radiobutton" id="4100" description="Dense EPG">
+					<include>SkinSettingsButton</include>
+					<label>$LOCALIZE[31989]</label>
+					<onclick>Skin.ToggleSetting(DenseEPG)</onclick>
+					<selected>Skin.HasSetting(DenseEPG)</selected>
+					<radioposx>1210</radioposx>
+				</control>
+			</control>
 		</control>
 		<control type="scrollbar" id="60">
 			<visible>$EXP[isEnabledScrollbar]</visible>

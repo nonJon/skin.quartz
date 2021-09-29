@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<!-- ID: 10 -->
+	<!-- EPG TIMELINE -->
+	<include name="EPGTimelineView" description="TV Guide Timeline">
+		<control type="group">
+			<visible>Control.IsVisible(10)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="epggrid" id="10">
+				<viewtype label="19032">list</viewtype>
+				<posx>10</posx>
+				<posy>100</posy>
+				<width>1900</width>
+				<height>711</height>
+				<pagecontrol>10</pagecontrol>
+				<scrolltime tween="quadratic" easing="out">300</scrolltime>
+				<timeblocks>34</timeblocks>
+				<rulerunit>6</rulerunit>
+				<onleft>101</onleft>
+				<onright>101</onright>
+				<onup>10</onup>
+				<ondown>10</ondown>
+				<rulerlayout height="81" width="60">
+					<control type="image" id="1" description="Header row">
+						<width>60</width>
+						<height>81</height>
+						<posx>0</posx>
+						<posy>0</posy>
+						<texture></texture>
+					</control>
+					<control type="label" id="2">
+						<visible>!ListItem.Property(DateLabel)</visible>
+						<posx>10</posx>
+						<posy>0</posy>
+						<width>58</width>
+						<height>81</height>
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>EPGfontTime</font>
+						<textcolor>HL</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label" id="2">
+						<visible>ListItem.Property(DateLabel)</visible>
+						<posx>10</posx>
+						<posy>0</posy>
+						<width>58</width>
+						<height>81</height>
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>EPGFont</font>
+						<textcolor>HL</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</rulerlayout>
+				<progresstexture colordiffuse="HL" border="0,96,18,14">img/EPGMarker.png</progresstexture>
+				<channellayout height="63" width="310">
+					<control type="image" description="Column 1">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>310</width>
+						<height>63</height>
+						<bordersize>1</bordersize>
+						<texture>img/ListNF.png</texture>
+					</control>
+					<control type="label">
+						<left>4</left>
+						<posy>0</posy>
+						<width>81</width>
+						<height>63</height>
+						<font>size17</font>
+						<align>right</align>
+						<info>ListItem.ChannelNumberLabel</info>
+					</control>
+					<control type="label" id="1" description="Column 1 selected">
+						<posx>96</posx>
+						<width>220</width>
+						<height>63</height>
+						<font>size17</font>
+						<label>$INFO[ListItem.ChannelName]</label>
+					</control>
+				</channellayout>
+				<focusedchannellayout height="63" width="310">
+					<control type="image" description="Column 1">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>310</width>
+						<height>63</height>
+						<bordersize>1</bordersize>
+						<texture>img/ListFO.png</texture>
+					</control>
+					<control type="label" description="Column 1 FO">
+						<left>4</left>
+						<posy>0</posy>
+						<width>81</width>
+						<height>63</height>
+						<font>size17</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>White2</textcolor>
+						<info>ListItem.ChannelNumberLabel</info>
+					</control>
+					<control type="label" id="1" description="Column 1 Focused">
+						<posx>96</posx>
+						<width>220</width>
+						<height>63</height>
+						<font>size17</font>
+						<textcolor>White2</textcolor>
+						<aligny>center</aligny>
+						<align>left</align>
+						<label>$INFO[ListItem.ChannelName]</label>
+					</control>
+				</focusedchannellayout>
+				<itemlayout height="63" width="60">
+					<control type="image" id="2" description="Row">
+						<visible>!ListItem.HasTimer</visible>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>60</width>
+						<height>63</height>
+						<bordersize>1</bordersize>
+						<texture fallback="pvr_genres/0.png">pvr_genres/$INFO[ListItem.Property(GenreType)].png</texture>
+					</control>
+					<control type="image" id="2" description="Row">
+						<visible>ListItem.HasTimer</visible>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>60</width>
+						<height>63</height>
+						<texture fallback="pvr_genres/0.png">pvr_genres/$INFO[ListItem.Property(GenreType)].png</texture>
+						<bordertexture border="5">img/EPGHasTimerBorder.png</bordertexture>
+					</control>
+					<control type="label" id="1">
+						<posx>9</posx>
+						<posy>0</posy>
+						<width>45</width>
+						<height>63</height>
+						<font>size18</font>
+						<scroll>false</scroll>
+						<info>ListItem.Label</info>
+					</control>
+				</itemlayout>
+				<focusedlayout height="63" width="60">
+					<control type="image" id="2" description="Row">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>60</width>
+						<height>63</height>
+						<texture fallback="pvr_genres/0.png">pvr_genres/$INFO[ListItem.Property(GenreType)].png</texture>
+						<bordertexture border="5">img/MediaButton2.png</bordertexture>
+					</control>
+					<control type="label" id="1">
+						<posx>9</posx>
+						<posy>0</posy>
+						<width>45</width>
+						<height>63</height>
+						<font>size18</font>
+						<textcolor>White2</textcolor>
+						<info>ListItem.Label</info>
+					</control>
+					<control type="label">
+						<height>30</height>
+						<width>135</width>
+						<align>left</align>
+						<label>$INFO[ListItem.Property(GenreType)]</label>
+						<font>size17</font>
+						<textcolor>Red</textcolor>
+						<visible>Skin.HasSetting(DebugInfo)</visible>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="image" description="Top split">
+				<posx>10</posx>
+				<posy>165</posy>
+				<width>1900</width>
+				<height>2</height>
+				<texture>img/LineST.png</texture>
+			</control>
+			<control type="image" description="Middle split">
+				<posx>10</posx>
+				<posy>825</posy>
+				<width>1900</width>
+				<height>2</height>
+				<texture>img/LineST.png</texture>
+			</control>
+			<control type="group">
+				<posx>0</posx>
+				<posy>838</posy>
+				<control type="image" description="TV Logo">
+					<posx>20</posx>
+					<width>288</width>
+					<height>234</height>
+					<fadetime>160</fadetime>
+					<include>Icon_Fade</include>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<bordertexture border="12">img/ThumbBorder.png</bordertexture>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="label">
+					<posx>324</posx>
+					<width>1510</width>
+					<height>40</height>
+					<aligny>center</aligny>
+					<align>left</align>
+					<scroll>false</scroll>
+					<font>size20</font>
+					<label>[COLOR=HL]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<posx>324</posx>
+					<posy>46</posy>
+					<width>1510</width>
+					<height>20</height>
+					<label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ]$INFO[ListItem.Season, • $LOCALIZE[20373] ]$INFO[ListItem.Episode, • $LOCALIZE[20359] ]$INFO[ListItem.Genre, • ]</label>
+					<font>size16</font>
+					<textcolor>Grey3</textcolor>
+				</control>
+				<control type="textbox" description="Plot Value for TV">
+					<posx>324</posx>
+					<posy>70</posy>
+					<width>1590</width>
+					<height>165</height>
+					<align>left</align>
+					<font>size18</font>
+					<textcolor>Silver</textcolor>
+					<autoscroll delay="8000" time="4300" repeat="10000">!Skin.HasSetting(_AutoScrollOff)</autoscroll>
+					<label>$INFO[ListItem.Plot]</label>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>

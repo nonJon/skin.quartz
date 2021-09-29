@@ -709,7 +709,13 @@ msgctxt "#31988"
 msgid "Media shelf items"
 msgstr "Media shelf items"
 
+msgctxt "#31989"
+msgid "Dense EPG"
+msgstr "Dense EPG"
 
+msgctxt "#31990"
+msgid "Show 5 hours and more channels at once."
+msgstr "Show 5 hours and more channels at once."
 
 
 
