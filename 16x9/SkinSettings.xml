@@ -518,6 +518,14 @@
 					<selected>Skin.HasSetting(HideMediaShelves)</selected>
 					<radioposx>1210</radioposx>
 				</control>
+				<control type="radiobutton" id="3415" description="Don't hide media shelves when video is playing">
+					<include>SkinSettingsButton</include>
+					<enable>!Skin.HasSetting(HideMediaShelves)</enable>
+					<label>$LOCALIZE[31991]</label>
+					<onclick>Skin.ToggleSetting(ShowMediaShelves)</onclick>
+					<selected>Skin.HasSetting(ShowMediaShelves)</selected>
+					<radioposx>1210</radioposx>
+				</control>
 				<control type="radiobutton" id="3410" description="Use fanart slideshow">
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[31169]</label>

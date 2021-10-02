@@ -120,7 +120,7 @@
 	</include>
 	<include name="HideMediaShelf">
 		<visible>!Skin.HasSetting(HideMediaShelves) | [Skin.HasSetting(HideMediaShelves) + $EXP[ShelfHasFocus]]</visible>
-		<visible>!$EXP[BGvideoPlaying] | [$EXP[BGvideoPlaying] + $EXP[ShelfHasFocus]]</visible>
+		<visible>!$EXP[BGvideoPlaying] | [$EXP[BGvideoPlaying] + $EXP[ShelfHasFocus]] | Skin.HasSetting(ShowMediaShelves)</visible>
 	</include>
 	<include name="UpDownArrows">
 		<param name="up_posy">134</param>

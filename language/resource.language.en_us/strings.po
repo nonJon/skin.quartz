@@ -717,17 +717,11 @@ msgctxt "#31990"
 msgid "Show 5 hours and more channels at once."
 msgstr "Show 5 hours and more channels at once."
 
+msgctxt "#31991"
+msgid "    Don't hide media shelves when video is playing"
+msgstr "    Don't hide media shelves when video is playing"
 
-
-
-
-
-
-
-
-
-
-
-
-
+msgctxt "#31992"
+msgid "Don't hide media shelves on homepage when video is playing"
+msgstr "Don't hide media shelves on homepage when video is playing"
 
