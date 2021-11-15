@@ -13,21 +13,6 @@
 				<description>Timers group</description>
 				<visible>Control.IsVisible(50)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="image" description="video window background">
-					<visible>Player.HasVideo</visible>
-					<posx>60</posx>
-					<posy>100</posy>
-					<width>600</width>
-					<height>340</height>
-					<texture>img/BlackDot.png</texture>
-				</control>
-				<control type="videowindow" description="TV Channel Live BG">
-					<visible>Player.HasVideo</visible>
-					<posx>60</posx>
-					<posy>10</posy>
-					<width>600</width>
-					<height>500</height>
-				</control>
 				<control type="label">
 					<posx>60</posx>
 					<posy>50</posy>

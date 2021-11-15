@@ -14,7 +14,7 @@
 				<visible>Control.IsVisible(50)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="group">
-					<visible>ListItem.HasEPG + !Player.HasVideo</visible>
+					<visible>ListItem.HasEPG</visible>
 					<left>0</left>
 					<top>0</top>
 					<control type="image">
@@ -23,8 +23,7 @@
 						<width>600</width>
 						<height>320</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<!--<aspectratio align="center" aligny="center">keep</aspectratio>-->
-						<aspectratio>stretch</aspectratio>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					<control type="label">
 						<left>690</left>
@@ -57,21 +56,6 @@
 						<autoscroll delay="10000" time="3000" repeat="6000">true</autoscroll>
 						<label>$INFO[ListItem.Plot]</label>
 					</control>
-				</control>
-				<control type="image" description="video window background">
-					<visible>Player.HasVideo</visible>
-					<posx>60</posx>
-					<posy>90</posy>
-					<width>600</width>
-					<height>320</height>
-					<texture>img/BlackDot.png</texture>
-				</control>
-				<control type="videowindow" description="TV Channel Live BG">
-					<visible>Player.HasVideo</visible>
-					<posx>60</posx>
-					<posy>90</posy>
-					<width>600</width>
-					<height>320</height> 
 				</control>
 				<control type="label">
 					<posx>60</posx>

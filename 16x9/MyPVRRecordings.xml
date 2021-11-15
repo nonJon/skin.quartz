@@ -20,7 +20,6 @@
 					<height>440</height>
 					<texture>$INFO[ListItem.Thumb]</texture>
 					<include>Icon_Fade</include>
-					<visible>!Player.HasVideo</visible>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
@@ -29,26 +28,9 @@
 					<posy>11</posy>
 					<width>878</width>
 					<height>440</height>
-					<texture fallback="special://skin/extras/backgrounds/KodiBG120.jpg">$INFO[Skin.String(CustomRecordingsBackgroundImage)]</texture>
+					<texture>$INFO[ListItem.Icon]</texture>
 					<include>VisibleFadeEffect</include>
-					<visible>!Player.HasVideo</visible>
-				</control>
-				<control type="videowindow">
-					<visible>Control.IsVisible(50)</visible>
-					<posx>0</posx>
-					<posy>11</posy>
-					<width>878</width>
-					<height>440</height>
-					<visible>Player.HasVideo</visible>
-					<animation effect="slide" start="0,0" end="-2000,0" time="0">WindowClose</animation>
-				</control>
-				<control type="image">
-					<visible>Player.HasVideo | ListItem.IsFolder</visible>
-					<posx>-6</posx>
-					<posy>6</posy>
-					<width>888</width>
-					<height>450</height>
-					<texture border="5">img/CoverOverlay0.png</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<posy>-48</posy>
