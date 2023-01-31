@@ -4,7 +4,7 @@
 	<onunload condition="Skin.HasSetting(UseExtInfo) + Player.ShowInfo + Window.IsActive(fullscreenvideo)">Info</onunload>
 	<defaultcontrol always="true">901</defaultcontrol>
 	<include>OpenClose</include>
-	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !String.IsEmpty(Player.SeekNumeric) | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
+	<visible>Player.Seeking | Player.HasPerformedSeek(3) | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !String.IsEmpty(Player.SeekNumeric) | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
 	<visible>![Window.IsActive(sliderdialog) | Window.IsActive(pvrosdchannels)]</visible>
 	<visible>Window.IsActive(fullscreenvideo)</visible>
 	<animation effect="fade" start="0" end="100" time="400">Visible</animation>
@@ -81,48 +81,16 @@
 		<control type="group">
 			<posy>270</posy>
 			<control type="image" description="Background">
-				<visible>player.forwarding | player.rewinding | [Player.Paused + Player.Caching] | [Player.DisplayAfterSeek + !String.IsEmpty(Player.SeekOffset)]</visible>
+				<visible>player.forwarding | player.rewinding | [Player.Paused + Player.Caching] | [Player.HasPerformedSeek(3) + !String.IsEmpty(Player.SeekOffset)] | !String.IsEmpty(Player.SeekStepSize)</visible>
 				<posx>855</posx>
 				<posy>525</posy>
 				<width>210</width>
 				<height>75</height>
 				<texture border="6">img/BlackRounded.png</texture>
 			</control>
-			<control type="label" id="24" description="Buffering label">
-				<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
-				<include>SeekbarLabels</include>
-				<label>$INFO[Player.CacheLevel,,%]</label>
-			</control>
-			<control type="label" description="2x RW FW label">
-				<visible>player.forwarding2x | player.rewinding2x</visible>
-				<include>SeekbarLabels</include>
-				<label>2 X</label>
-			</control>
-			<control type="label" description="4x RW FW label">
-				<visible>player.forwarding4x | player.rewinding4x</visible>
-				<include>SeekbarLabels</include>
-				<label>4 X</label>
-			</control>
-			<control type="label" description="8x RW FW label">
-				<visible>player.forwarding8x | player.rewinding8x</visible>
-				<include>SeekbarLabels</include>
-				<label>8 X</label>
-			</control>
-			<control type="label" description="16x RW FW label">
-				<visible>player.forwarding16x | player.rewinding16x</visible>
-				<include>SeekbarLabels</include>
-				<label>16 X</label>
-			</control>
-			<control type="label" description="32x RW FW label">
-				<visible>player.forwarding32x | player.rewinding32x</visible>
-				<include>SeekbarLabels</include>
-				<label>32 X</label>
-			</control>
 			<control type="label" description="Seek time label">
-				<visible>![player.forwarding | player.rewinding]</visible>
-				<visible>Player.DisplayAfterSeek</visible>
 				<include>SeekbarLabels</include>
-				<label>$INFO[Player.SeekOffset]</label>
+				<label>$VAR[SeekLabel]</label>
 			</control>
 		</control>
 		<control type="group" description="Dialog Background">
@@ -166,6 +134,13 @@
 				<align>right</align>
 				<label>$INFO[Player.TimeRemaining,-]</label>
 				<font>size17</font>
+			</control>
+			<control type="progress" id="401">
+				<posx>360</posx>
+				<posy>3</posy>
+				<width>1200</width>
+				<height>24</height>
+				<visible>Player.SeekEnabled + Player.Seeking</visible>
 			</control>
 		</control>
 		<control type="group">

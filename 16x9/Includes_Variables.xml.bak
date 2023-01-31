@@ -13,20 +13,6 @@
 		<value condition="player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x">OSD/Rewind.png</value>
 		<value>OSD/Play.png</value>
 	</variable>
-	<variable name="VideoPlayerForwardRewindVar">
-		<value condition="Player.Forwarding2x | Player.Rewinding2x">2x</value>
-		<value condition="Player.Forwarding4x | Player.Rewinding4x">4x</value>
-		<value condition="Player.Forwarding8x | Player.Rewinding8x">8x</value>
-		<value condition="Player.Forwarding16x | Player.Rewinding16x">16x</value>
-		<value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
-	</variable>
-	<variable name="SeekLabel">
-		<value condition="!String.IsEmpty(Player.SeekStepSize)">$INFO[Player.SeekStepSize]</value>
-		<value condition="!String.IsEmpty(Player.SeekOffset) + Player.HasPerformedSeek(3)">$INFO[Player.SeekOffset]</value>
-		<value condition="Player.Forwarding">$VAR[VideoPlayerForwardRewindVar]</value>
-		<value condition="Player.Rewinding">$VAR[VideoPlayerForwardRewindVar]</value>
-		<value condition="Player.IsTempo">$INFO[Player.PlaySpeed]</value>
-	</variable>
 	<variable name="SlideshowTimeLabel2">
 		<value condition="Skin.HasSetting(ImageTime1)">$LOCALIZE[31200]</value>
 		<value condition="Skin.HasSetting(ImageTime2)">$LOCALIZE[31201]</value>

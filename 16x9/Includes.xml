@@ -545,7 +545,7 @@
 	<include name="WeatherBackground">
 		<control type="multiimage" description="Weather BG">
 			<include>ArtworkConstants</include>
-			<imagepath fallback="special://skin/extras/backgrounds/Weather.jpg" background="true">$INFO[Skin.String(Weather_Background)]</imagepath>
+			<imagepath background="true">$INFO[Skin.String(Weather_Background)]</imagepath>
 			<visible>Window.IsVisible(MyWeather.xml) + !$EXP[BGvideoPlaying] + !Skin.HasSetting(HideFanart)</visible>
 		</control>
 		<!--<include>DiffuseBG</include>-->
