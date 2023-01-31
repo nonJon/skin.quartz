@@ -120,7 +120,7 @@
 				</control>
 			</control>
 		</control> 	
-		<control type="button" id="9001"description="Paging badge">
+		<control type="button" id="9001" description="Paging badge">
 			<visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
 			<centerleft>1600</centerleft>
 			<centertop>840</centertop>
