@@ -1,7 +1,7 @@
 # Quartz 
 
 
-Quartz skin for KODI 20 (Nexus)
+Quartz skin for KODI 21 (Omega)
 
 Follow the link below for the latest news and information about this classic skin for KODI.
 
