@@ -1,6 +1,6 @@
-<addon id="skin.quartz" version="5.20.0" name="Quartz" provider-name="nonjon">
+<addon id="skin.quartz" version="5.21.0" name="Quartz" provider-name="nonjon">
   <requires>
-    <import addon="xbmc.gui" version="5.16.0"/>
+    <import addon="xbmc.gui" version="5.17.0"/>
     <import addon="script.favourites" version="4.0.4"/>
   </requires>
   
