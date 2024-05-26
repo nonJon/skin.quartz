@@ -4,7 +4,7 @@
 		<control type="group" description="Big Icons">
 			<visible>Control.IsVisible(501)</visible>
 			<control type="fixedlist" id="501">
-				<visible>Container.content(movies) | Container.content(tvshows) | Container.content(seasons)</visible>
+				<visible>Container.content(movies) | Container.content(tvshows) | Container.content(seasons)| container.content(Favourites)</visible>
 				<posx>-270</posx>
 				<posy>111</posy>
 				<width>2400</width>
@@ -20,7 +20,7 @@
 				<preloaditems>4</preloaditems>
 				<orientation>horizontal</orientation>
 				<scrolltime easing="inout">280</scrolltime>
-				<itemlayout condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)" width="330" height="480">
+				<itemlayout condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)| container.content(Favourites)" width="330" height="480">
 					<control type="image">
 						<posx>12</posx>
 						<posy>12</posy>
@@ -56,7 +56,7 @@
 						<aspectratio>keep</aspectratio>
 					</control>					
 				</itemlayout>
-				<focusedlayout condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)" width="330" height="480">
+				<focusedlayout condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)| container.content(Favourites)" width="330" height="480">
 					<control type="image">
 						<posx>12</posx>
 						<posy>12</posy>

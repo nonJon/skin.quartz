@@ -42,6 +42,7 @@
 			</control>
 			<control type="group" description="INFO grouped for visibility sake">
 				<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
+				<visible>!Window.IsActive(playerprocessinfo) + [Player.ShowInfo | Window.IsActive(musicosd)]</visible>
 				<animation effect="fade" time="500">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
 				<control type="group" description="Info panel LEFT">

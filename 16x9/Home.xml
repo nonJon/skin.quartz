@@ -679,7 +679,7 @@
 							<item id="5" description="Favorites">
 								<visible>!Skin.HasSetting(XBMC2)</visible>
 								<label>1036</label>
-								<onclick>ActivateWindow(Favourites)</onclick>
+								<onclick>ActivateWindow(FavouritesBrowser)</onclick>
 							</item>
 							<item id="6" description="LogOff Profile">
 								<visible>System.HasLoginScreen</visible>
