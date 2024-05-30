@@ -263,13 +263,13 @@
 		</content>
 	</include>
 	<include name="Music_RA_Items">
-		<content target="music" limit="10">$VAR[MusicShelfPop]</content>
+		<content target="music" limit="10" browse="never">$VAR[MusicShelfPop]</content>
 	</include>
 	<include name="PVR_RR_Items">
-		<content sortby="date" sortorder="descending" limit="14">pvr://recordings/tv/active?view=flat</content>
+		<content sortby="date" sortorder="descending" limit="14" browse="never">pvr://recordings/tv/active?view=flat</content>
 	</include>
 	<include name="PVR_RW_Items">
-		<content sortby="lastplayed" sortorder="descending" limit="10">pvr://channels/tv/*?view=lastplayed</content>
+		<content sortby="lastplayed" sortorder="descending" limit="10" browse="never">pvr://channels/tv/*?view=lastplayed</content>
 	</include>
 	<include name="Music_Custom_Items">
 		<content>
