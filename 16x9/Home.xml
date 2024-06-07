@@ -645,6 +645,7 @@
 					<control type="list" id="306" description="KODI">
 						<onleft>305</onleft>
 						<onright>301</onright>
+						<onup>306</onup>					
 						<ondown>306</ondown>
 						<include>Sublist</include>
 						<content>
