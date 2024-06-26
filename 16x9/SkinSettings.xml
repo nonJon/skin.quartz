@@ -140,6 +140,14 @@
 					<label2>$INFO[Skin.String(FanartVisibility)]</label2>
 					<onclick>Skin.SetNumeric(FanartVisibility,207)</onclick>
 				</control>
+				<control type="button" id="3104" description="Weather fanart chooser">
+					<label>$LOCALIZE[31137]</label>
+					<label2>$INFO[Skin.String(WeatherFanart.name)]</label2>
+					<include>SkinSettingsButton</include>
+					<onclick condition="System.AddonIsEnabled(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
+					<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
+					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
+				</control>
 				<control type="radiobutton" id="3108" description="Show Weather">
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[20084]</label>

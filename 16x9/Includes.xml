@@ -331,6 +331,7 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>size23</font>
+		<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="DimBG">
 		<control type="image" description="Default BG">
@@ -554,12 +555,11 @@
 		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="WeatherBackground">
-		<control type="multiimage" description="Weather BG">
+		<control type="multiimage">
 			<include>ArtworkConstants</include>
-			<imagepath background="true">$INFO[Skin.String(Weather_Background)]</imagepath>
-			<visible>Window.IsVisible(MyWeather.xml) + !$EXP[BGvideoPlaying] + !Skin.HasSetting(HideFanart)</visible>
+			<imagepath background="true" >$VAR[WeatherFanartVar]</imagepath>			
+			<visible>Window.IsActive(MyWeather.xml) + !$EXP[BGvideoPlaying]</visible>
 		</control>
-		<!--<include>DiffuseBG</include>-->
 	</include>
 	<include name="VideosBackground">
 		<control type="image" description="Fanart">
