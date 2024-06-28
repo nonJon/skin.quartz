@@ -245,8 +245,8 @@ msgid "Restore skin settings"
 msgstr "Restore skin settings"
 
 msgctxt "#31137"
-msgid "Choose weather fanart pack"
-msgstr "Choose weather fanart pack"
+msgid "Choose weather fanart"
+msgstr "Choose weather fanart"
 
 msgctxt "#31138"
 msgid "Install and select weather fanart pack add-ons."
