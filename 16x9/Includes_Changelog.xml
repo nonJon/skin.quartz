@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="ChangeLogText">
+		<label>2024-07-03 [v5.21.1]
+- return of the auto close feature for video/music OSDs (see skin settings category: Player)
+- fanart pack support for weather (see skin settings category: General)
+- ColorPicker support
+- remove embedded mini player from PVRTimers/PVRSearch and increased row count in list containers
+- show movie set meta info in mediainfo and mediainfo2 views
+- mediainfo2 speedup
+- music visualization beautification
+- fix Now Playing movie/epg artwork
+- shrink am/pm indicator for system clock
+- visual tweaks too numerous to document
+
+2024-05-30 [v5.21.0]
+- omega release
+		</label>
+	</include>
+</includes>

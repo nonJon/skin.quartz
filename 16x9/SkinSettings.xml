@@ -179,6 +179,9 @@
 					<onclick>Skin.Reset(HideFanart)</onclick>
 					<onclick>Skin.Reset(FanartVisibility)</onclick>
 					<onclick>Skin.Reset(shutdown)</onclick>
+					<onclick>Skin.Reset(WeatherFanart.name)</onclick>
+					<onclick>Skin.Reset(WeatherFanart.path)</onclick>
+					<onclick>ReloadSkin()</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="3080" description="Views">
@@ -764,6 +767,18 @@
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[31972]</label>
 					<onclick>ReloadSkin()</onclick>
+				</control>
+				<control type="button" id="3502" description="View Kodi log">
+					<label>$LOCALIZE[21483] $LOCALIZE[31002] $LOCALIZE[31003]</label>
+					<include>SkinSettingsButton</include>
+					<onclick condition="System.AddonIsEnabled(script.logviewer)">RunScript(script.logviewer,show_log)</onclick>
+					<onclick condition="System.HasAddon(script.logviewer) + !System.AddonIsEnabled(script.logviewer)">EnableAddon(script.logviewer)</onclick>
+					<onclick condition="!System.HasAddon(script.logviewer)">InstallAddon(script.logviewer)</onclick>
+				</control>
+				<control type="button" id="3503" description="View quartz change log">
+					<label>$LOCALIZE[21483] $LOCALIZE[31006] [LOWERCASE]$LOCALIZE[24036][/LOWERCASE]</label>
+					<include>SkinSettingsButton</include>
+					<onclick>ActivateWindow(1105)</onclick>
 				</control>
 				<control type="radiobutton" id="3501" description="Debug logging">
 					<include>SkinSettingsButton</include>

@@ -24,6 +24,14 @@ msgctxt "#31001"
 msgid "Video decoder"
 msgstr "Video decoder"
 
+msgctxt "#31002"
+msgid "kodi"
+msgstr "kodi"
+
+msgctxt "#31003"
+msgid "log"
+msgstr "log"
+
 msgctxt "#31004"
 msgid "Show"
 msgstr "Show"
@@ -31,6 +39,10 @@ msgstr "Show"
 msgctxt "#31005"
 msgid "recorded"
 msgstr "recorded"
+
+msgctxt "#31006"
+msgid "quartz"
+msgstr "quartz"
 
 msgctxt "#31007"
 msgid "Memory"

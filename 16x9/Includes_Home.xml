@@ -305,7 +305,6 @@
 				<fadetime>700</fadetime>
 				<texture>$VAR[FanartSource]</texture>
 				<aspectratio>scale</aspectratio>
-				<visible>Skin.HasSetting(UseFanartSlideshow) + !Window.IsVisible(favourites)</visible>
 			</control>
 		</control>
 	</include>

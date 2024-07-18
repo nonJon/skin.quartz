@@ -64,6 +64,7 @@
 	<include file="Includes_Home.xml" />
 	<include file="Includes_Shelf.xml" />
 	<include file="Includes_Shelf_Items.xml" />
+	<include file="Includes_Changelog.xml" />
 	<include name="RandImageOn">
 		<randomize>true</randomize>
 	</include>
