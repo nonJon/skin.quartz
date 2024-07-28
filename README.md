@@ -7,4 +7,4 @@ Follow the link below for the latest news and information about this classic ski
 
 https://forum.kodi.tv/showthread.php?tid=377697
 
-Note: DO NOT SUBMIT PULL REQUESTS TO MY GITHUB REPOSITORY!  FEATURE REQUESTS AND BUG REPORTS SHOULD TAKE THE FORM OF A POST AT THE LINK ABOVE.
+Note: DO NOT submit pull requests to my github repository. The link above is your one-stop-shop for  bug reporting and feature requests.
