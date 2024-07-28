@@ -179,16 +179,16 @@
 	</include>
 	<include name="SystemClock" description="Clock all windows">
 		<control type="grouplist">
-				<visible>Skin.HasSetting(ShowClock) + !Skin.HasSetting(DebugInfo)</visible>
-				<visible>![Window.IsVisible(CustomFanart.xml) | Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]</visible>
-				<right>65</right>
-				<width min="0" max="140">auto</width>
-				<height>75</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<itemgap>0</itemgap>
-				<orientation>horizontal</orientation>
-				<include>VisibleFadeEffect</include>
+			<visible>Skin.HasSetting(ShowClock) + !Skin.HasSetting(DebugInfo)</visible>
+			<visible>![Window.IsVisible(CustomFanart.xml) | Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]</visible>
+			<right>65</right>
+			<width min="0" max="150">auto</width>
+			<height>75</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<itemgap>0</itemgap>
+			<orientation>horizontal</orientation>
+			<include>VisibleFadeEffect</include>
 			<control type="label" description="hours">
 				<width min="0" max="140">auto</width>
 				<font>size25</font>
